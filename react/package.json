@@ -1,12 +1,12 @@
 {
-  "name": "menu-jsx",
+  "name": "react",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
   "scripts": {
     "build": "./node_modules/.bin/babel script.jsx -o script.js -w"
   },
-  "author": "Azat Mardan",
+  "author": "Irina Zakharova",
   "license": "MIT",
   "babel": {
     "presets": [
