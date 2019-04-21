@@ -1,0 +1,685 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#container {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: url("../../img/ast-edt-2018-2-respi-pulmonolog_target/bg.jpg");
+  background-size: contain;
+}
+.tree {
+  position: absolute;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: .2s;
+  pointer-events: none;
+}
+.overlay__bg {
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, #3d7880 0%, #4eb0ad 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  opacity: .5;
+}
+.overlay .block {
+  position: absolute;
+  top: 60px;
+  left: 43px;
+  width: 937px;
+}
+.overlay .block__footboard {
+  width: 100%;
+}
+.overlay .block__content {
+  display: flex;
+  padding-left: 10px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: #4D4D4D;
+  margin-bottom: 14px;
+}
+.overlay .block__content__img {
+  min-width: 37px;
+  max-width: 37px;
+  height: 37px;
+}
+.overlay .block__content sup {
+  line-height: 0;
+}
+.overlay .block > .block__header {
+  position: absolute;
+  top: 78px;
+  left: 146px;
+  display: flex;
+  align-items: center;
+}
+.overlay .block > .block__header .block__header__img {
+  min-width: 35px;
+  max-width: 35px;
+  height: 35px;
+}
+.overlay .block > .block__header .block__header__content {
+  font-size: 23px;
+  padding-left: 18px;
+  color: #4B78BA;
+  font-family: 'Co-Headline Regular', sans-serif;
+}
+.overlay .block__list {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.overlay .block__list .block__header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -63px;
+  margin-bottom: 15px;
+  height: 152px;
+}
+.overlay .block__list .block__header__img {
+  width: 130px;
+}
+.overlay .block__list .block__header__img--liver {
+  width: 150px;
+}
+.overlay .block__list .block__header__content {
+  margin-top: -21px;
+  font-size: 24px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: bold;
+  color: #333333;
+}
+.overlay .block__list--bowel {
+  top: 124px;
+  left: 96px;
+  width: 474px;
+}
+.overlay .block__list--liver {
+  top: 124px;
+  left: 550px;
+  width: 474px;
+}
+.overlay .block__close {
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  width: 50px;
+  height: 50px;
+}
+.overlay .block .links {
+  position: absolute;
+  bottom: 98px;
+  left: 107px;
+  width: 731px;
+  font-size: 10px;
+  font-family: 'Myriad Pro', sans-serif;
+  overflow: visible;
+}
+.overlay .block .links ol {
+  padding-left: 10px;
+}
+.overlay .block .links li {
+  overflow: visible;
+}
+.list {
+  position: absolute;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2;
+}
+.list.vertical-list {
+  top: 94px;
+  left: 512px;
+}
+.list.horizontal-list {
+  top: 374px;
+  left: 234px;
+  display: flex;
+}
+.list__figure {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 32px;
+  height: 35px;
+}
+.list__figure--s {
+  height: 32px;
+  width: 33px;
+}
+.list__figure--xs {
+  height: 24px;
+  width: 27px;
+}
+.list__figure--xxs {
+  height: 22px;
+  width: 19px;
+}
+.images-target {
+  position: absolute;
+  width: 602px;
+  top: 84px;
+  left: 225px;
+}
+.images-stomach {
+  position: absolute;
+  width: 240px;
+  top: 138px;
+  left: 14px;
+}
+.images-liver {
+  position: absolute;
+  width: 236px;
+  top: 83px;
+  left: 767px;
+}
+.images-info {
+  position: absolute;
+  width: 67px;
+  top: 568px;
+  left: 780px;
+}
+.images-text {
+  position: absolute;
+  width: 227px;
+  top: 162px;
+  left: 539px;
+  transform: rotate(-1deg);
+  z-index: 2;
+}
+.images-button--1 {
+  position: absolute;
+  top: -13px;
+  left: -15px;
+  width: 250px;
+}
+.images-button--2 {
+  position: absolute;
+  top: -13px;
+  left: -15px;
+  width: 250px;
+}
+.images-button-active--1,
+.images-button-active--2 {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 223px;
+  opacity: 0;
+  transition: .4s;
+  pointer-events: none;
+}
+.images-text--1 {
+  position: absolute;
+  top: 14px;
+  left: 60px;
+  width: 133px;
+}
+.images-text--2 {
+  position: absolute;
+  top: 4px;
+  left: 60px;
+  width: 133px;
+}
+.images-sight {
+  position: absolute;
+  width: 169px;
+  opacity: 0;
+  transition: none;
+  pointer-events: none;
+}
+.images-line-1 {
+  position: absolute;
+  width: 215px;
+  top: 402px;
+  left: 131px;
+}
+.images-line-2 {
+  position: absolute;
+  width: 215px;
+  top: 248px;
+  left: 740px;
+}
+.buttons__button {
+  position: absolute;
+  width: 218px;
+  height: 49px;
+  border-radius: 24px;
+  z-index: 1;
+}
+.buttons__button--1 {
+  top: 657px;
+  left: 133px;
+}
+.buttons__button--2 {
+  top: 657px;
+  left: 694px;
+}
+.buttons__button.disabled {
+  opacity: .5;
+}
+.link-button {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 63px;
+  height: 23px;
+  background: #db6547;
+  color: #fff;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+.fire {
+  width: 200px;
+  position: absolute;
+  top: 295px;
+  left: 436px;
+  opacity: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+.fire.animate {
+  animation: fire .1s forwards;
+}
+.good {
+  pointer-events: none;
+}
+.good .bullet--1 {
+  position: absolute;
+  top: 354px;
+  left: 494px;
+  width: 57px;
+  opacity: 0;
+}
+.good .smoke {
+  pointer-events: none;
+}
+.good .smoke--1 {
+  position: absolute;
+  top: 160px;
+  left: 461px;
+  width: 250px;
+  opacity: 0;
+}
+.good .stomach {
+  position: absolute;
+  width: 205px;
+  top: 140px;
+  left: 31px;
+  opacity: 0;
+  transition: 1s;
+}
+.good .liver {
+  position: absolute;
+  width: 189px;
+  top: 91px;
+  left: 788px;
+  opacity: 0;
+  transition: 1s;
+}
+.good .grey {
+  position: absolute;
+  top: 85px;
+  width: 603px;
+  left: 224px;
+  opacity: 0;
+}
+.good.animate .bullet {
+  transition: opacity;
+  transition-delay: .1s;
+  opacity: 1;
+}
+.good.animate .smoke {
+  animation: ease-out smoke 12s forwards;
+}
+.good.animate .grey {
+  opacity: 1;
+}
+.good.animate .stomach {
+  opacity: 1;
+}
+.good.animate .liver {
+  opacity: 1;
+}
+.bad .grey {
+  position: absolute;
+  width: 599px;
+  top: 86px;
+  left: 226px;
+  opacity: 0;
+  pointer-events: none;
+}
+.bad .bullet--2 {
+  position: absolute;
+  width: 526px;
+  top: 113px;
+  left: 272px;
+  opacity: 0;
+}
+.bad .smoke {
+  pointer-events: none;
+}
+.bad .smoke--1 {
+  position: absolute;
+  top: 160px;
+  left: 461px;
+  width: 250px;
+  opacity: 0;
+}
+.bad .smoke--2 {
+  position: absolute;
+  top: 260px;
+  left: 461px;
+  width: 450px;
+  opacity: 0;
+  transform: rotate(-20deg);
+}
+.bad .smoke--3 {
+  position: absolute;
+  top: 50px;
+  width: 1500px;
+  opacity: 0;
+}
+.bad .stomach {
+  position: absolute;
+  width: 203px;
+  top: 145px;
+  left: 31px;
+  opacity: 0;
+  transition: 1s;
+}
+.bad .liver {
+  position: absolute;
+  width: 189px;
+  top: 91px;
+  left: 788px;
+  opacity: 0;
+  transition: 1s;
+}
+.bad .fire--2 {
+  top: 255px;
+  left: 225px;
+}
+.bad .fire--3 {
+  top: 57px;
+  left: 520px;
+}
+.bad .fire--4 {
+  top: 500px;
+  left: 300px;
+}
+.bad .fire--5 {
+  top: 361px;
+  left: 656px;
+}
+.bad .fire--6 {
+  top: 420px;
+  left: 500px;
+}
+.bad.animate .grey {
+  opacity: 1;
+}
+.bad.animate .bullet {
+  opacity: 1;
+}
+.bad.animate .smoke--1 {
+  animation: ease-out smoke 12s forwards;
+}
+.bad.animate .smoke--3 {
+  animation: ease-in smoke3 10s forwards;
+}
+.bad.animate .fire--2 {
+  animation: fire .1s .05s forwards;
+}
+.bad.animate .fire--3 {
+  animation: fire .1s .1s forwards;
+}
+.bad.animate .fire--4 {
+  animation: fire .1s .15s forwards;
+}
+.bad.animate .fire--5 {
+  animation: fire .1s .2s forwards;
+}
+.bad.animate .fire--6 {
+  animation: fire .1s .25s forwards;
+}
+.bad.animate .stomach {
+  opacity: 1;
+}
+.bad.animate .liver {
+  opacity: 1;
+}
+.vertical-text {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: grey;
+  font-family: 'Myriad Pro', sans-serif;
+  top: 570px;
+  left: 892px;
+  font-size: 13px;
+}
+.hand {
+  position: absolute;
+  width: 64px;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
+  z-index: 1;
+}
+.hand--1 {
+  top: 669px;
+  left: 221px;
+  animation: opacity 1s forwards;
+}
+.hand--2 {
+  top: 669px;
+  left: 796px;
+  animation: opacity 1s 1s forwards;
+}
+.hand--3 {
+  top: 646px;
+  left: 499px;
+  z-index: 99;
+}
+.footer {
+  position: absolute;
+  top: 656px;
+  left: 26px;
+  width: calc(100% - 26px);
+  height: 114px;
+  box-sizing: border-box;
+}
+.footer__links {
+  position: absolute;
+  top: 72px;
+  left: 45px;
+  width: 850px;
+  font-size: 9px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-style: italic;
+  overflow: visible;
+  opacity: 0;
+  transition: .3s;
+}
+.footer__links.active {
+  opacity: 1;
+}
+.footer__links ol,
+.footer__links li {
+  overflow: visible;
+}
+.footer__link-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 21px;
+  z-index: 1;
+}
+.footer__logo {
+  position: absolute;
+  top: 62px;
+  left: 880px;
+  width: 93px;
+  height: 26px;
+}
+.footer.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sight-shadow {
+  width: 169px;
+  position: absolute;
+  top: 578px;
+  left: 439px;
+  opacity: 0;
+  transition: .5s;
+  pointer-events: none;
+}
+.splinter-1,
+.splinter-2,
+.splinter-3,
+.splinter-4,
+.splinter-5,
+.splinter-6 {
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
+}
+.splinter-1 {
+  left: 500px;
+  top: 370px;
+}
+.splinter-2 {
+  left: 500px;
+  top: 396px;
+}
+.splinter-3 {
+  left: 496px;
+  top: 402px;
+}
+.splinter-4 {
+  left: 460px;
+  top: 420px;
+}
+.splinter-5 {
+  left: 520px;
+  top: 360px;
+}
+.splinter-6 {
+  left: 511px;
+  top: 360px;
+}
+.italic {
+  font-style: italic;
+}
+@keyframes fire {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes smoke {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(400px) translateY(-50px) rotate(-30deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(400px) translateY(-50px) rotate(-30deg);
+  }
+}
+@keyframes smoke2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(400px) translateY(50px) rotate(-10deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(400px) translateY(50px) rotate(-10deg);
+  }
+}
+@keyframes smoke3 {
+  5% {
+    opacity: .5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .8;
+    transform: translateX(200px) translateY(50px) scale(1.5);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(200px) translateY(50px) scale(1.5);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes moving {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.buttons__button.active .images-button-active {
+  opacity: 1;
+}
+.sight.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+.hand.active {
+  animation: moving 3s .5s forwards;
+}
+.sight-shadow.active {
+  animation: moving 3s .5s forwards;
+}
+/*# sourceMappingURL=ast-edt-2018-2-respi-pulmonolog_target.css.map */

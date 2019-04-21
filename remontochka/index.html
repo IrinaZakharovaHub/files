@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <meta name="viewport" content="width=device-width">
+    <title>РЕМОНТ ПОМЕЩЕНИЙ - РЕМОНТОЧКА</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Arsenal|Bad+Script|Cousine|Comfortaa|Cousine|Jura:400,700|Neucha|Poiret+One|Noto+Sans"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="header">
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="img/logo.svg" width="50" height="50" alt="">
+            <span class="remon">РЕМОН</span><span class="tochka">ТОЧКА</span>
+        </a>
+        <div class="navigation">
+            <ul>
+                <li class="item">
+                    <a href="#">Ремонт квартир</a>
+                </li>
+                <li class="item">
+                    <a href="#">Ремонт домов</a>
+                </li>
+                <li class="item">
+                    <a href="#">Ремонт офисов</a>
+                </li>
+                <li class="item">
+                    <a href="#">Цены</a>
+                </li>
+            </ul>
+            <span class="form-inline my-2 my-lg-0 phone">
+                <img src="img/phone.svg" alt="" height="40" width="40">
+                <a href="tel: +7 (915) 999-99-99">+7 (915) 999-99-99</a>
+            </span>
+        </div>
+    </nav>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="order">
+            <div class="picture">
+                <img src="img/lady.svg" alt="">
+            </div>
+            <div class="main-form">
+                <h1>Ставим точку в ремонте.</h1>
+                    <p><input id="text" type="text" name="mfbName" placeholder="Имя:" required onchange="changeTextColor()"/></p>
+                    <p><input id="tel" type="tel" name="mfbPhone" placeholder="Телефон:" required onchange="changeTelColor()"/></p>
+                    <p><input id="submit" type="submit" value="Отправить заявку"/></p>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="about">
+        <div class="container">
+            <p>
+                Наша компания работает с 2005 года. За это время мы выполнили качественный ремонт в десятках квартир,
+                домов и офисов.
+                На страницах сайта можно ознакомиться с выполненными работами, сроками и итоговой стоимостью. Также, вы
+                можете
+                заказать расчет стоимости в форме обратной связи, или рассчитать приблизительную стоимость
+                самостоятельно.
+            </p>
+            <p>
+                Мы выполняем все типы услуг по ремонту квартир, домов и офисов: выравнивание и покраска стен и потолков,
+                укладка полов, установка окон и дверей, перепланировка помещений, другие строительные работы.
+            </p>
+        </div>
+    </div>
+<div class="container">
+    <div class="work">
+
+        <div class="type-of-work" id="cell">
+            <h3>Ремонт потолков</h3>
+            <div class="img-wrap">
+                <div class="img cell"></div>
+            </div>
+        </div>
+        <div class="type-of-work" id="wall">
+            <h3>Ремонт стен</h3>
+            <div class="img-wrap">
+                <div class="img wall"></div>
+            </div>
+        </div>
+        <div class="type-of-work" id="floor">
+            <h3>Ремонт полов</h3>
+            <div class="img-wrap">
+                <div class="img floor"></div>
+            </div>
+        </div>
+        <div class="type-of-work" id="electric">
+            <h3>Работы по электрике</h3>
+            <div class="img-wrap">
+                <div class="img electric"></div>
+            </div>
+        </div>
+        <div class="type-of-work san" id="sanitary">
+            <h3>Сантехнические работы</h3>
+            <div class="img-wrap">
+                <div class="img sanitary"></div>
+            </div>
+        </div>
+        <div class="type-of-work" id="door">
+            <h3>Установка дверей</h3>
+            <div class="img-wrap">
+                <div class="img door"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="container">
+        <div class="price-by-type-of-work">
+            <table class="checktheprice" id="cell1" width="100%">
+                <tr class="sector-white">
+                    <th>Выберите работы для приблизительного расчета</th>
+                    <th>Цена (за м2)</th>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Демонтажные работы</th>
+                    <!--<td></td>-->
+                </tr>
+                <tr data-cost="150" data-name="ba">
+                    <td>Очистка потолка от шпаклевки, краски, масла</td>
+                    <td>от 150 руб.</td>
+                </tr>
+                <tr data-cost="50" data-name=bb"">
+                    <td>Удаление потолочных обоев</td>
+                    <td>от 50 руб.</td>
+                </tr>
+                <tr data-cost="150" data-name="bc">
+                    <td>Удаление потолочной плитки</td>
+                    <td>от 150 руб.</td>
+                </tr>
+                <tr data-cost="120" data-name="bd">
+                    <td>Демонтаж подвесных потолков</td>
+                    <td>от 120 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="be">
+                    <td>Демонтаж потолочного плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="200" data-name="bf">
+                    <td>Демонтаж лепнины</td>
+                    <td>от 200 руб.</td>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Монтажные работы</th>
+                </tr>
+                <tr data-cost="80" data-name="bi">
+                    <td>Грунтовка потолка</td>
+                    <td>от 80 руб.</td>
+                </tr>
+                <tr data-cost="80" data-name="bg">
+                    <td>Установка армированной сетки</td>
+                    <td>от 80 руб.</td>
+                </tr>
+                <tr data-cost="90" data-name="bi">
+                    <td>Установка сетки рабицы</td>
+                    <td>от 90 руб.</td>
+                </tr>
+                <tr data-cost="100" data-name="bk">
+                    <td>Установка стеклохолста</td>
+                    <td>от 100 руб.</td>
+                </tr>
+                <tr data-cost="400" data-name="bl">
+                    <td>Установка реечного подвесного потолка</td>
+                    <td>от 400 руб.</td>
+                </tr>
+                <tr data-cost="700" data-name="bm">
+                    <td>Установка пластикового потолка</td>
+                    <td>от 700 руб.</td>
+                </tr>
+                <tr data-cost="800" data-name="bn">
+                    <td>Установка потолка из гипсокартона</td>
+                    <td>от 800 руб.</td>
+                </tr>
+                <tr data-cost="100" data-name="bo">
+                    <td>Монтаж потолочного плинтуса</td>
+                    <td>от 100 руб.</td>
+                </tr>
+                <tr data-cost="300" data-name="bp">
+                    <td>Поклейка потолочных обоев</td>
+                    <td>от 300 руб.</td>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Штукатурные работы</th>
+                </tr>
+                <tr data-cost="400" data-name="br">
+                    <td>Штукатурка потолка</td>
+                    <td>от 400 руб.</td>
+                </tr>
+                <tr data-cost="200" data-name="bs">
+                    <td>Шпаклевка потолка</td>
+                    <td>от 200 руб.</td>
+                </tr>
+                <tr data-cost="250" data-name="bbt">
+                    <td>Покраска потолка краской</td>
+                    <td>от 250 руб.</td>
+                </tr>
+                <tr data-cost="400" data-name="bt">
+                    <td>Покраска потолка декоративной краской</td>
+                    <td>от 400 руб.</td>
+                </tr>
+                <tr data-cost="1400" data-name="bu">
+                    <td>Декоративная штукатурка</td>
+                    <td>от 1400 руб.</td>
+                </tr>
+                <tr data-cost="2000" data-name="bv">
+                    <td>Венецианская штукатурка</td>
+                    <td>от 2000 руб.</td>
+                </tr>
+
+
+            </table>
+            <table class="checktheprice" id="wall1" width="100%">
+                <tr class="sector-white">
+                    <th>Выберите работы для приблизительного расчета</th>
+                    <th>Цена (за м2)</th>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Демонтажные работы</th>
+                    <!--<td></td>-->
+                </tr>
+                <tr data-cost="150" data-name="a">
+                    <td>Очистка потлока от шпаклевки, краски, масла</td>
+                    <td>от 150 руб.</td>
+                </tr>
+                <tr data-cost="50" data-name="b">
+                    <td>Удаление старых обоев</td>
+                    <td>от 50 руб.</td>
+                </tr>
+                <tr data-cost="120" data-name="c">
+                    <td>Демонтаж подвесных потолков</td>
+                    <td>от 120 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="d">
+                    <td>Демонтаж потолочного плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Монтажные работы</th>
+                </tr>
+                <tr data-cost="80" data-name="e">
+                    <td>Грунтовка потолка</td>
+                    <td>от 80 руб.</td>
+                </tr>
+                <tr data-cost="400" data-name="f">
+                    <td>Штукатурка потолка</td>
+                    <td>от 400 руб.</td>
+                </tr>
+                <tr data-cost="200" data-name="g">
+                    <td>Шпаклевка потолка</td>
+                    <td>от 200 руб.</td>
+                </tr>
+                <tr data-cost="250" data-name="i">
+                    <td>Покраска потолка водоэмульсионной краской</td>
+                    <td>от 250 руб.</td>
+                </tr>
+                <tr data-cost="300" data-name="h">
+                    <td>Поклейка потолочных обоев</td>
+                    <td>от 300 руб.</td>
+                </tr>
+            </table>
+            <table class="checktheprice" id="floor1" width="100%">
+                <tr class="sector-white">
+                    <th>Выберите работы для приблизительного расчета</th>
+                    <th>Цена (за м2)</th>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Демонтажные работы</th>
+                    <!--<td></td>-->
+                </tr>
+                <tr data-cost="200" data-name="k">
+                    <td>Демонтаж плитки</td>
+                    <td>от 200 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="l">
+                    <td>Демонтаж линолеума</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="m">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="n">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Монтажные работы</th>
+                </tr>
+                <tr data-cost="250" data-name="o">
+                    <td>Укладка линолеума</td>
+                    <td>от 250 руб.</td>
+                </tr>
+                <tr data-cost="350" data-name="p">
+                    <td>Укладка ламината</td>
+                    <td>от 350 руб.</td>
+                </tr>
+                <tr data-cost="950" data-name="r">
+                    <td>Кладка плитки</td>
+                    <td>от 950 руб.</td>
+                </tr>
+                <tr data-cost="410" data-name="s">
+                    <td>Стяжка песчано-цементной смесью</td>
+                    <td>от 410 руб.</td>
+                </tr>
+                <tr data-cost="345" data-name="t">
+                    <td>Устройство наливного пола</td>
+                    <td>от 345 руб.</td>
+                </tr>
+            </table>
+            <table class="checktheprice" id="electric1" width="100%">
+                <tr class="sector-white">
+                    <th>Выберите работы для приблизительного расчета</th>
+                    <th>Цена (за м2)</th>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Демонтажные работы</th>
+                    <!--<td></td>-->
+                </tr>
+                <tr data-cost="200" data-name="u">
+                    <td>Демонтаж плитки</td>
+                    <td>от 200 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="v">
+                    <td>Демонтаж линолеума</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="w">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="x">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Монтажные работы</th>
+                </tr>
+                <tr data-cost="250" data-name="y">
+                    <td>Укладка линолеума</td>
+                    <td>от 250 руб.</td>
+                </tr>
+                <tr data-cost="350" data-name="z">
+                    <td>Укладка ламината</td>
+                    <td>от 350 руб.</td>
+                </tr>
+                <tr data-cost="950" data-name="aa">
+                    <td>Кладка плитки</td>
+                    <td>от 950 руб.</td>
+                </tr>
+                <tr data-cost="410" data-name="ab">
+                    <td>Стяжка песчано-цементной смесью</td>
+                    <td>от 410 руб.</td>
+                </tr>
+                <tr data-cost="345" data-name="ac">
+                    <td>Устройство наливного пола</td>
+                    <td>от 345 руб.</td>
+                </tr>
+            </table>
+            <table class="checktheprice" id="sanitary1" width="100%">
+                <tr class="sector-white">
+                    <th>Выберите работы для приблизительного расчета</th>
+                    <th>Цена (за м2)</th>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Демонтажные работы</th>
+                    <!--<td></td>-->
+                </tr>
+                <tr data-cost="200" data-name="ad">
+                    <td>Демонтаж плитки</td>
+                    <td>от 200 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="af">
+                    <td>Демонтаж линолеума</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="ae">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="ah">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Монтажные работы</th>
+                </tr>
+                <tr data-cost="250" data-name="ai">
+                    <td>Укладка линолеума</td>
+                    <td>от 250 руб.</td>
+                </tr>
+                <tr data-cost="350" data-name="ak">
+                    <td>Укладка ламината</td>
+                    <td>от 350 руб.</td>
+                </tr>
+                <tr data-cost="950" data-name="al">
+                    <td>Кладка плитки</td>
+                    <td>от 950 руб.</td>
+                </tr>
+                <tr data-cost="410" data-name="am">
+                    <td>Стяжка песчано-цементной смесью</td>
+                    <td>от 410 руб.</td>
+                </tr>
+                <tr data-cost="345" data-name="an">
+                    <td>Устройство наливного пола</td>
+                    <td>от 345 руб.</td>
+                </tr>
+            </table>
+            <table class="checktheprice" id="door1" width="100%">
+                <tr class="sector-white">
+                    <th>Выберите работы для приблизительного расчета</th>
+                    <th>Цена (за м2)</th>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Демонтажные работы</th>
+                    <!--<td></td>-->
+                </tr>
+                <tr data-cost="200" data-name="ap">
+                    <td>Демонтаж плитки</td>
+                    <td>от 200 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="ar">
+                    <td>Демонтаж линолеума</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="as">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr data-cost="30" data-name="at">
+                    <td>Демонтаж плинтуса</td>
+                    <td>от 30 руб.</td>
+                </tr>
+                <tr class="sector">
+                    <th colspan="2">Монтажные работы</th>
+                </tr>
+                <tr data-cost="250" data-name="av">
+                    <td>Укладка линолеума</td>
+                    <td>от 250 руб.</td>
+                </tr>
+                <tr data-cost="350" data-name="aw">
+                    <td>Укладка ламината</td>
+                    <td>от 350 руб.</td>
+                </tr>
+                <tr data-cost="950" data-name="ax">
+                    <td>Кладка плитки</td>
+                    <td>от 950 руб.</td>
+                </tr>
+                <tr data-cost="410" data-name="ay">
+                    <td>Стяжка песчано-цементной смесью</td>
+                    <td>от 410 руб.</td>
+                </tr>
+                <tr data-cost="345" data-name="az">
+                    <td>Устройство наливного пола</td>
+                    <td>от 345 руб.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cost-result">
+            <div class="left">
+                Площадь помещения:
+                <input type="number" class="input-metr" id="metr" min="0" max="90"  step="1" value="10"/> м<sup>2</sup>
+            </div>
+            <div class="right">
+                Расчетная стоимость ремонта- <h2 class="render-result"> </h2> руб.
+            </div>
+
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="content">
+            <a href="#" class="closebtn">&times;</a>
+            <a class="navigationControls prev">&#10094;</a>
+            <a class="navigationControls next">&#10095;</a>
+            <img src="" class="img-responsive bigImage"/>
+            <div class="imageTitle"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="row galleryContainer">
+        </ul>
+    </div>
+    <div class="rooms">
+        <div class="type-of-room">
+            <a href="kitchen.html">
+                <h3>Ремонт на кухне</h3>
+                <div class="img-wrap">
+                    <div class="img kithen">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="type-of-room">
+            <a href="bath.html">
+                <h3>Ремонт в ванной</h3>
+                <div class="img-wrap">
+                    <div class="img bath"></div>
+                </div>
+            </a>
+        </div>
+        <div class="type-of-room">
+            <a href="rooms/sanitary.html">
+                <h3>Ремонт санузла</h3>
+                <div class="img-wrap">
+                    <div class="img sanit"></div>
+                </div>
+            </a>
+        </div>
+        <div class="type-of-room">
+            <a href="rooms/holl.html">
+                <h3>Ремонт в коридоре</h3>
+                <div class="img-wrap">
+                    <div class="img hall"></div>
+                </div>
+            </a>
+        </div>
+        <div class="type-of-room">
+            <a href="rooms/bedroom.html">
+                <h3>Ремонт в спальне</h3>
+                <div class="img-wrap">
+                    <div class="img bed"></div>
+                </div>
+            </a>
+        </div>
+        <div class="type-of-room">
+            <a href="rooms/guests.html">
+                <h3>Ремонт в гостиной</h3>
+                <div class="img-wrap">
+                    <div class="img chair"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="map">
+        <span>Карта сайта</span>
+        <br>
+        <span>www.remontochka.ru</span>
+    </div>
+    <div class="phone">
+        <img src="img/phone.svg" alt="" height="50" width="50">
+        <a href="tel: +7(495) 999-99-99">+7 (495) 999-99-99</a>
+    </div>
+    <div class="smm">
+        <object class="object" type="image/svg+xml" data="img/vk.svg" height="40" width="40">
+        </object>
+        <object class="object" type="image/svg+xml" data="img/fb.svg" height="40" width="40">
+        </object>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script>
+    function changeTextColor() {
+        var answer = 0;
+        var text = (document.getElementById('text'));
+        var re = /^\D{2,15}\D$/;
+        var valid = re.test(text.value);
+        if (valid) {
+            text.style.background = '#a7ff9e';
+            answer = 1;
+        }
+        else {
+            text.style.background = 'rgba(255, 235, 59, 0.64)';
+        }
+        return answer;
+    }
+    function changeTelColor() {
+        var answer = 0;
+        var tel = (document.getElementById('tel'));
+            var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+            var valid = re.test(tel.value);
+            if (valid) {
+                tel.style.background = '#a7ff9e';
+                answer = 1;
+            }
+            else {
+                tel.style.background = 'rgba(255, 235, 59, 0.64)';
+            }
+            return answer;
+    }
+    window.onload = function () {
+
+
+        function display() {
+                var tables = document.querySelectorAll('.checktheprice');
+                tables[0].style.display = 'table';
+                var type = $('.type-of-work');
+
+                type.on('click', function () {
+                        var x = this.childNodes[3].childNodes[1];
+                    type.find('.img').hover(function () {
+                            $(this).css('filter', 'grayscale(0%)')
+                        },
+                        function () {
+                        if (this != x) {
+                            $(this).css('filter', 'grayscale(100%)');
+                        }
+                        else {
+                            $(this).css('filter', 'grayscale(0%)');
+                        }
+                        });
+                    type.find('.img').css('filter', 'grayscale(100%)');
+                    $(this).find('.img').css('filter', 'grayscale(0%)');
+                    $('.checktheprice').css('display', 'none');
+                    for (var i = 0; i < tables.length; i++) {
+                        if (tables[i].id == this.id + '' + 1) {
+                            tables[i].style.display = 'table';
+                        }
+                    }
+
+                });
+
+        }
+        function Calculator() {
+            var serviceBuffer = [];
+
+
+            $('.checktheprice tr').on('click', count);
+            $('#metr').on('change', render);
+            var bigSumm;
+            function count() {
+                var summ = 0;
+                    $(this).addClass('chosen');
+                    if($(this).hasClass('listen')) {
+                        $(this).removeClass('chosen');
+                        for (var i = 0; i < serviceBuffer.length; i++) {
+                            if (serviceBuffer[i].name === $(this).attr('data-name')) {
+                                serviceBuffer[i] = 0;
+                            }
+                        }
+                        $(this).removeClass('listen');
+                    }
+                    else  {
+                        $(this).addClass('listen');
+                        var objectBuffer = {};
+                        objectBuffer.cost = $(this).attr('data-cost');
+                        objectBuffer.name = $(this).attr('data-name');
+                        serviceBuffer.push(objectBuffer);
+
+                    }
+
+                    for (var l = 0; l < serviceBuffer.length; l++) {
+                        if (!serviceBuffer[l].cost) continue;
+                        summ += +serviceBuffer[l].cost;
+                    }
+                    bigSumm = summ;
+                render();
+            }
+
+            function render () {
+                var metr = $('#metr').val();
+                $('.render-result').text((bigSumm || 0) * metr);
+            }
+
+
+        }
+
+        var calc = new Calculator();
+
+        display();
+
+
+
+    };
+</script>
+<script>
+    var submit = document.querySelector('#submit');
+    submit.onclick = function() {
+
+               if (changeTelColor() && changeTextColor()) {
+                console.log('OK');
+               }
+               else {
+                console.log('nop');
+               }
+             
+
+
+
+    }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!--
+
+ОБЪЕКТЫ, СОБЫТИЯ, МЕТОДЫ, ОРГАНИЗАЦИЯ КОДА
+__________________________________________________________
+
+-todo: объекты и их конструкторы
+Основные объекты
+Специальные объекты JavaScript
+ new Img();
+ new Promise();
+
+-todo: события и методы событий в JavaScript
+https://www.w3schools.com/jsref/dom_obj_event.asp
+
+МЕТОДЫ DRAG & DROP
+
+todo:
+
+ИСПОЛЬЗУЕМЫЕ МЕТОДЫ (ФУНКЦИИ) ДЛЯ ОРГАНИЗАЦИИ JAVASCRIPT КОДА
+
+-todo: call, apply
+https://getinstance.info/articles/javascript/call-apply-and-bind-functions/
+https://learn.javascript.ru/call-apply
+func.call(obj) -> Выбор разных функций и объектов из списка (добавление функций к объектам, возможность добавления произвольных аргуменов)
+Результат: рез-т выполнения функции + код функции
+Добавить примеры - использование методов других объетов
+
+
+-todo: bind
+https://getinstance.info/articles/javascript/call-apply-and-bind-functions/
+Добавить примеры - привязка контекста с помощью bind
+
+
+-todo: try/catch
+https://itchief.ru/lessons/javascript/107-javascript-exception-handling
+
+-todo: http://xmlhttprequest.ru/
+
+
+
+ОРГАНИЗАЦИЯ КОДА
+
+- todo: callback
+https://habr.com/post/151716/
+Добавить примеры - использование callback
+Добавить примеры - использование callback + Apply
+Callbacks Jquery - http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82_callbacks
+
+- todo: chaining
+http://forwebdev.ru/javascript/chaining/
+http://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/
+
+
+- todo: функциональное наследование: функции-конструкторы
+Вызов собственного свойства/метода конструктора
+Установка свойств функции-конструктора из аргументов
+Вызов конструктора в конструкторе
+Вызов метода конструктора в конструкторе + контроллер
+
+
+-todo: прототипное наследование, прототипы и конструкторы
+Запись метода в прототип класса
+Запись объекта и его прототипа как прототип другого объекта
+Вызов метода прототипа конструктора в конструкторе + контроллер
+
+
+-todo: new Promise - промисы и цепочки then
+https://getinstance.info/articles/javascript/grokking-es6-promises-the-four-functions-you-need-to-avoid-callback-hel/
+http://blog.liveedu.tv/javascript-promises/
+
+
+-->
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+<div class="face">
+    <div class="face__movable-block">
+        <div class="description m-5">
+            <h1> Методы call, apply</h1>
+             <h2>#1 Вызов объекта методом call</h2>
+        </div>
+       
+        <div class="function-block">
+            <code>
+                     function changeColor() {
+                document.querySelector ('.button')&shy;.css.backgroundColor = this.color; 
+            }
+            </code>
+       
+        </div>
+            <div class="m-5 drag-drop-block__zone object-block block-pink">
+                <div class="object-block__code">
+                    <code>let pinkObject = {
+    color: 'pink';
+ }</code>
+                </div>
+                <div id="function1" class="round green" draggable="true">
+                    <!-- <code>call</code> -->
+                </div>
+            </div>
+
+            <div class="drag-drop-block__zone object-block m-5 block-yellow">
+                <div class="object-block__code"><code>let yellowObject = {
+     color: 'yellow';
+  }</code>
+            </div>
+              <div id="function1" class="round opacity" draggable="true">
+                    <!-- <code>call</code> -->
+                </div>
+    </div>
+                 
+        <span class="comment">// ВЫЗОВ ФУНКЦИИ</span>
+        <div class="function-block">
+            <code>changeColor.call( <span id="obj-key" class="key">object1</span> );</code>
+    </div>
+    <div class="results-block m-5">
+        <h3>Результат:</h3>
+      <button class="results-block__button pink">BUTTON</button>
+    </div>
+      <div class="description m-5">
+             <p>
+                 В этом примере мы вызываем функцию changeColor в контексте объекта 1 или 2. 
+             </p>
+             <p>
+                 Суть метода состоит в том, что ключевое слово this заменяется на связанный с функцией контекст. В данном примере это - объекты object1 или object2. Также часто используется связка функции с другой функцией.
+             </p>
+        </div>
+   
+</div>
+
+<script>
+
+    function changeColor() {    
+        document.querySelector('.results-block__button').style.backgroundColor = this.color; 
+        document.querySelector('#obj-key').innerHTML = this.name; 
+    }
+    let object1 = { color: 'pink', name: 'pinkObject' }
+    let object2 = { color: 'yellow', name: 'yellowObject'}
+
+    
+//  Дополнительная функция - methodCall(),
+//  позволяет менять контекст вызова по событию onclick на одном из объектов
+    var object = document.querySelectorAll('.object-block');
+    for (let i = 0; i < object.length; i++) {
+        object[i].addEventListener('click', methodCall, false);
+    }
+
+        function methodCall() {
+            var circles = document.querySelectorAll('.round');
+              for (let i = 0; i < circles.length; i++) {
+        circles[i].classList.remove('green');
+        circles[i].classList.add('opacity');
+    }
+            this.childNodes[3].classList.add('green');
+            this.childNodes[3].classList.remove('opacity');
+
+         if (this.classList.contains('block-pink')) {
+            
+            changeColor.call( object1 );
+        }
+        else changeColor.call( object2 );
+
+    }
+
+
+
+    // var blocks = document.querySelectorAll('.function-call');
+    // var zones = document.querySelectorAll('.drag-drop-block__zone');
+
+    // [].forEach.call(zones, function(e) {
+    //     e.addEventListener('dragover', dragover, false);
+    //     e.addEventListener('drop', drop, false);
+    // });
+
+    // [].forEach.call(blocks, function(e) {
+    //     e.addEventListener('dragstart', dragstart, false);
+    // });
+    // function dragstart(e) {
+    //     e.dataTransfer.setData("text", e.target.id); // Сохраняем ID в DataTransfer
+    //     console.log(e.dataTransfer);
+    //     this.classList.add('pointer');
+    // }
+
+    // function dragover(e) {
+    //     e.preventDefault();
+    // }
+
+    // function drop(e) {
+    //     var elementID = e.dataTransfer.getData('text');
+    //     var element = document.getElementById(elementID);
+    //     e.target.appendChild(element);
+    //     element.classList.remove('pointer');
+    // }
+
+</script>
+</body>
+</html>

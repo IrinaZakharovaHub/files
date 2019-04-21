@@ -1,0 +1,179 @@
+{
+  "settings": {
+    "slideFlip": {
+      "animationSpeed": 0,
+      "gestures": [
+        "doubleswipe"
+      ]
+    }
+  },
+  "slides": [
+    {
+      "name": "slide_1",
+      "alias": "slide_1",
+      "source": "slide_1.html",
+      "preview": "prewiews/slide_1.png",
+      "events": [
+        {
+          "name": "renny",
+          "alias": "nav-renny"
+        },
+        {
+          "name": "almagel",
+          "alias": "nav-almagel"
+        }
+      ]
+    },
+    {
+      "name": "slide_2",
+      "alias": "slide_2",
+      "source": "slide_2.html",
+      "preview": "prewiews/slide_2.png",
+      "events": []
+    },
+    {
+      "name": "slide_3",
+      "alias": "slide_3",
+      "source": "slide_3.html",
+      "preview": "prewiews/slide_3.png",
+      "events": []
+    },
+    {
+      "name": "slide_4",
+      "alias": "slide_4",
+      "source": "slide_4.html",
+      "preview": "prewiews/slide_4.png",
+      "events": []
+    },
+    {
+      "name": "slide_5",
+      "alias": "slide_5",
+      "source": "slide_5.html",
+      "preview": "prewiews/slide_5.png",
+      "events": []
+    },
+    {
+      "name": "slide_6",
+      "alias": "slide_6",
+      "source": "slide_6.html",
+      "preview": "prewiews/slide_6.png",
+      "events": []
+    },
+    {
+      "name": "slide_7",
+      "alias": "slide_7",
+      "source": "slide_7.html",
+      "preview": "prewiews/slide_7.png",
+      "events": []
+    },
+    {
+      "name": "slide_8",
+      "alias": "slide_8",
+      "source": "slide_8.html",
+      "preview": "prewiews/slide_8.png",
+      "events": []
+    },
+    {
+      "name": "slide_9",
+      "alias": "slide_9",
+      "source": "slide_9.html",
+      "preview": "prewiews/slide_9.png",
+      "events": []
+    },
+    {
+      "name": "slide_10",
+      "alias": "slide_10",
+      "source": "slide_10.html",
+      "preview": "prewiews/slide_10.png",
+      "events": []
+    },
+    {
+      "name": "slide_11",
+      "alias": "slide_11",
+      "source": "slide_11.html",
+      "preview": "prewiews/slide_11.png",
+      "events": []
+    },
+    {
+      "name": "slide_12",
+      "alias": "slide_12",
+      "source": "slide_12.html",
+      "preview": "prewiews/slide_12.png",
+      "events": []
+    },
+    {
+      "name": "slide_13",
+      "alias": "slide_13",
+      "source": "slide_13.html",
+      "preview": "prewiews/slide_13.png",
+      "events": []
+    },
+    {
+      "name": "slide_14",
+      "alias": "slide_14",
+      "source": "slide_14.html",
+      "preview": "prewiews/slide_14.png",
+      "events": []
+    },
+    {
+      "name": "slide_15",
+      "alias": "slide_15",
+      "source": "slide_15.html",
+      "preview": "prewiews/slide_15.png",
+      "events": []
+    },
+    {
+      "name": "slide_16",
+      "alias": "slide_16",
+      "source": "slide_16.html",
+      "preview": "prewiews/slide_16.png",
+      "events": []
+    }
+  ],
+  "branches": [
+    {
+      "name": "main",
+      "alias": "main",
+      "slides": [
+        "slide_1"
+      ],
+      "attachmentTags": {
+        "$all": "tag1"
+      }
+    },
+    {
+      "name": "renny",
+      "alias": "renny",
+      "slides": [
+        "slide_3",
+        "slide_4"
+      ],
+      "attachmentTags": {
+        "$all": "tag1"
+      }
+    },
+    {
+      "name": "almagel",
+      "alias": "almagel",
+      "slides": [
+        "slide_5",
+        "slide_6"
+      ],
+      "attachmentTags": {
+        "$all": "tag1"
+      }
+    }
+  ],
+  "handlers": {
+    "slide_1@main nav-renny": {
+      "action": "navigate",
+      "destination": "@renny",
+      "appearFrom": "left"
+    },
+    "slide_1@main nav-almagel": {
+      "action": "navigate",
+      "destination": "@almagel",
+      "appearFrom": "left"
+    }
+  }
+}

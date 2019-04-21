@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SFUIDisplayRegular';
+    src: url('SFUIDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AkrobatRegular';
+    src: url('Akrobat-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

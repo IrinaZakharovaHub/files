@@ -1,0 +1,49 @@
+.slide {
+    background: url(../../images/slide_8/slide_8.png) no-repeat 0 0 / cover;
+}
+.links-footer {
+    height: 193px;
+}
+
+
+.btn {
+    position: absolute;
+    width: 186px;
+    height: 59px;
+    z-index: 10;
+    opacity: 1;
+}
+
+.btn--1 {
+    top: 301px;
+    left: 39px;
+}
+
+.btn--2 {
+    top: 420px;
+    left: 39px;
+    height: 72px;
+}
+.btn--3 {
+    top: 537px;
+    left: 39px;
+    height: 140px;
+}
+.btn--4 {
+    top: 304px;
+    left: 785px;
+    height: 72px;
+}
+.btn--5 {
+    top: 399px;
+    left: 785px;
+    height: 100px;
+}
+.btn--6 {
+    top: 545px;
+    left: 785px;
+    height: 128px;
+}
+
+
+

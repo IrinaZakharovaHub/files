@@ -1,0 +1,139 @@
+.bg-beige {
+  border-bottom: 1px solid #0184bb;
+}
+.remon {
+  color: #4f4f4f;
+}
+.tochka {
+  color: #0184bb;
+}
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-link {
+  font-weight: 700;
+}
+.navbar-brand {
+  margin-left: 0.5rem;
+}
+.navbar-nav .nav-item {
+  padding: 10px;
+}
+.navbar-collapse .phone {
+  padding-right: 30px;
+}
+.navbar-collapse .phone a {
+  color: #FFF;
+  font-size: 20px;
+}
+.dropdown-menu {
+  border: none;
+  border-bottom: 1px solid #0184bb;
+  border-radius: 0%;
+}
+.dropdown-menu .dropdown-item:hover {
+  background: #0184bb;
+}
+.text-blue a {
+  color: #426565;
+}
+.nav-item:hover {
+  background: #0184bb;
+}
+@media all and (max-width: 1200px) {
+  .main .gallery {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+}
+@media all and (max-width: 980px) {
+  .header .navbar {
+    flex-flow: column nowrap;
+  }
+  .header .navbar .navigation {
+    flex-flow: column nowrap;
+  }
+  .header .navbar .navigation ul {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .header .navbar .navigation ul li {
+    padding: 5px;
+  }
+  .header .navbar .phone {
+    margin-left: 0;
+  }
+  .bg-beige {
+    padding: 5px;
+  }
+  .navbar-collapse .phone {
+    justify-content: center;
+  }
+  .main .order {
+    flex-flow: column nowrap;
+  }
+  .main .mending {
+    flex-flow: column wrap;
+    padding-top: 0;
+    align-items: center;
+  }
+  .main .mending .navs {
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+  .main .mending .type-of-mending {
+    padding: 2px;
+    width: 100%;
+  }
+  .main .mending .type-of-mending .mending-sections {
+    padding-left: 5px;
+    width: 70%;
+    align-self: flex-start;
+  }
+  .main .mending .type-of-mending:first-child {
+    padding-top: 10px;
+  }
+  .main .work .type-of-work {
+    max-width: 50%;
+    width: 50%;
+    padding: 10px;
+  }
+  .main .rooms .type-of-room {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  .main .gallery {
+    grid-template-columns: 0 1fr 0;
+  }
+  .form-outer .form-inner {
+    width: 90%;
+    left: 5%;
+    height: 80%;
+    top: 10%;
+  }
+  .footer {
+    flex-flow: column nowrap;
+  }
+  .footer .phone {
+    order: 1;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .footer .phone a {
+    font-size: 18px;
+  }
+  .footer .map {
+    order: 3;
+  }
+  .footer .smm {
+    padding: 5px;
+    text-align: center;
+    order: 2;
+  }
+}
+@media all and (min-width: 981px) {
+  .navbar {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,158 @@
+.slide {
+    background: url(../../images/slide_3/slide_3.png) no-repeat 0 0 / cover;
+}
+.links-footer {
+    height: 193px;
+}
+.popup__close {
+    display:none;
+    z-index: 11;
+}
+
+.btn {
+    position: absolute;
+    width: 186px;
+    height: 59px;
+    z-index: 12;
+    opacity: 1;
+}
+
+.btn--1 {
+    top: 301px;
+    left: 39px;
+}
+
+.btn--2 {
+    top: 420px;
+    left: 39px;
+    height: 72px;
+}
+.btn--3 {
+    top: 537px;
+    left: 39px;
+    height: 97px;
+}
+.btn--4 {
+    top: 312px;
+    left: 785px;
+    height: 72px;
+}
+.btn--5 {
+    top: 419px;
+    left: 785px;
+    height: 72px;
+}
+.btn--6 {
+    top: 537px;
+    left: 785px;
+    height: 72px;
+}
+
+.video {
+    position: absolute;
+    top: 242px;
+    left: 242px;
+    width: 519.5px;
+}
+
+.btn-video {
+    position: absolute;
+    left: 40px;
+    top: 150px;
+    width: 390px;
+    height: 70px;
+}
+
+.pointer-none {
+    pointer-events: none;
+}
+
+.btn--active {
+    display:block;
+    z-index: 10;
+}
+
+
+/*=================*/
+.bar {
+    position: absolute;
+}
+
+.bar li {
+    opacity: 0;
+}
+
+.bar--left {
+    top: 305px;
+    left: 41px;
+}
+
+.bar--right {
+    top: 312px;
+    left: 797px;
+}
+
+.bar.bar--left li {
+    margin-bottom: 41px;
+}
+
+.bar.bar--left li:first-child {
+    margin-bottom: 56px;
+}
+
+.bar.bar--right li {
+    margin-bottom: 40px;
+}
+
+.bar.bar--right li:first-child {
+    margin-bottom: 31px;
+}
+
+
+.animationActive .bar__item--1 {
+    opacity: 1;
+    -webkit-transition: .5s opacity 0s linear;
+    transition: .5s opacity 0s linear;
+}
+
+.animationActive .bar__item--2 {
+    opacity: 1;
+    -webkit-transition: .5s opacity 3.5s linear;
+    transition: .5s opacity 3.5s linear;
+}
+
+.animationActive .bar__item--3 {
+    opacity: 1;
+    -webkit-transition: .5s opacity 6.5s linear;
+    transition: .5s opacity 6.5s linear;
+}
+
+.popup.popup-1 {
+    left: 24px;
+    top: 334px;
+}
+
+.popup-2 {
+    top: 472px;
+    left: 24px;
+}
+
+.popup-3 {
+    top: 614px;
+    left: 25px;
+}
+
+.popup-4 {
+    left: 777px;
+    top: 366px;
+}
+
+.popup-5 {
+    left: 782px;
+    top: 471px;
+}
+
+.popup-6 {
+    left: 777px;
+    top: 615px;
+}

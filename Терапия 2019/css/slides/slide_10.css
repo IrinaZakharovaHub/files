@@ -1,0 +1,29 @@
+.slide {
+    background: url(../../images/slide_10/slide_10.png) no-repeat 0 0 / cover;
+}
+
+.btn {
+    position: absolute;
+    width: 122px;
+    height: 122px;
+    z-index: 10;
+    opacity: 1;
+}
+
+.btn--1 {
+    top: 193px;
+    left: 202px;
+}
+
+.btn--2 {
+    top: 193px;
+    left: 411px;
+}
+.btn--3 {
+    top: 193px;
+    left: 619px;
+}
+.btn--4 {
+    top: 193px;
+    left: 826px;
+}

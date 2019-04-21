@@ -1,0 +1,43 @@
+.bg-beige {
+  border-bottom: 1px solid #0184bb;
+}
+.remon {
+  color: #4f4f4f;
+}
+.tochka {
+  color: #0184bb;
+}
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-link {
+  font-weight: 700;
+}
+.navbar-brand {
+  margin-left: .5rem;
+}
+.navbar-nav .nav-item {
+  padding: 10px;
+}
+.navbar-collapse .phone {
+  padding-right: 30px;
+}
+.navbar-collapse .phone a {
+  color: #FFF;
+  font-size: 20px;
+}
+.dropdown-menu {
+  border: none;
+  border-bottom: 1px solid #0184bb;
+  border-radius: 0%;
+}
+.dropdown-menu .dropdown-item:hover {
+  background: #0184bb;
+}
+.text-blue a {
+  color: #426565;
+}
+.nav-item:hover {
+  background: #0184bb;
+}

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#container {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: #fff;
+}
+.buttons {
+  position: absolute;
+}
+.buttons--main {
+  top: 355px;
+  left: 186px;
+  width: 700px;
+  height: 172px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.buttons--main .buttons__button {
+  width: 100%;
+  height: 45px;
+}
+.buttons--opportunity,
+.buttons--speciality,
+.buttons--choice {
+  top: 656px;
+  left: 184px;
+  width: 700px;
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.buttons--opportunity .buttons__button,
+.buttons--speciality .buttons__button,
+.buttons--choice .buttons__button {
+  width: 345px;
+  height: 100%;
+}
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.screen__bg {
+  width: 100%;
+}
+.screen.active {
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+}
+.footer {
+  position: absolute;
+  top: 656px;
+  left: 26px;
+  width: calc(100% - 26px);
+  height: 114px;
+  box-sizing: border-box;
+}
+.footer__links {
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  width: 850px;
+  font-size: 9px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-style: italic;
+  overflow: visible;
+  opacity: 0;
+  transition: .3s;
+}
+.footer__links.active {
+  opacity: 1;
+  z-index: 99;
+}
+.footer__links ol,
+.footer__links li {
+  overflow: visible;
+}
+.footer__link-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 21px;
+  z-index: 1;
+}
+.footer__logo {
+  position: absolute;
+  top: 50px;
+  left: 875px;
+  width: 93px;
+  height: 26px;
+}
+.footer.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*# sourceMappingURL=ast-edt-2018-2-respi-pulmonolog_features.css.map */

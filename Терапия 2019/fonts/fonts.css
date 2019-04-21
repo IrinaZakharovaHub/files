@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    font-style: normal;
+    src: url('MyriadProRegular.eot');
+    src: url('MyriadProRegular.eot') format('embedded-opentype'),
+    url('MyriadProRegular.woff2') format('woff2'),
+    url('MyriadProRegular.woff') format('woff'),
+    url('MyriadProRegular.ttf') format('truetype'),
+    url('MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    font-style: italic;
+    src: url('MyriadProIt.eot');
+    src: url('MyriadProIt.eot') format('embedded-opentype'),
+    url('MyriadProIt.woff2') format('woff2'),
+    url('MyriadProIt.woff') format('woff'),
+    url('MyriadProIt.ttf') format('truetype'),
+    url('MyriadProIt.svg#MyriadProIt') format('svg');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 500;
+    font-style: normal;
+    src: url('MyriadProSemibold.eot');
+    src: url('MyriadProSemibold.eot') format('embedded-opentype'),
+    url('MyriadProSemibold.woff2') format('woff2'),
+    url('MyriadProSemibold.woff') format('woff'),
+    url('MyriadProSemibold.ttf') format('truetype'),
+    url('MyriadProSemibold.svg#MyriadProSemibold') format('svg');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    font-style: normal;
+    src: url('MyriadProBold.eot');
+    src: url('MyriadProBold.eot') format('embedded-opentype'),
+    url('MyriadProBold.woff2') format('woff2'),
+    url('MyriadProBold.woff') format('woff'),
+    url('MyriadProBold.ttf') format('truetype'),
+    url('MyriadProBold.svg#MyriadProBold') format('svg');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    font-style: italic;
+    src: url('MyriadProBoldIt.eot');
+    src: url('MyriadProBoldIt.eot') format('embedded-opentype'),
+    url('MyriadProBoldIt.woff2') format('woff2'),
+    url('MyriadProBoldIt.woff') format('woff'),
+    url('MyriadProBoldIt.ttf') format('truetype'),
+    url('MyriadProBoldIt.svg#MyriadProBoldIt') format('svg');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-weight: 400;
+    font-style: normal;
+    src: url('MyriadProCond.eot');
+    src: url('MyriadProCond.eot') format('embedded-opentype'),
+    url('MyriadProCond.woff2') format('woff2'),
+    url('MyriadProCond.woff') format('woff'),
+    url('MyriadProCond.ttf') format('truetype'),
+    url('MyriadProCond.svg#MyriadProCond') format('svg');
+}
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-weight: 400;
+    font-style: italic;
+    src: url('MyriadProCondIt.eot');
+    src: url('MyriadProCondIt.eot') format('embedded-opentype'),
+    url('MyriadProCondIt.woff2') format('woff2'),
+    url('MyriadProCondIt.woff') format('woff'),
+    url('MyriadProCondIt.ttf') format('truetype'),
+    url('MyriadProCondIt.svg#MyriadProCondIt') format('svg');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-weight: 700;
+    font-style: normal;
+    src: url('MyriadProBoldCond.eot');
+    src: url('MyriadProBoldCond.eot') format('embedded-opentype'),
+    url('MyriadProBoldCond.woff2') format('woff2'),
+    url('MyriadProBoldCond.woff') format('woff'),
+    url('MyriadProBoldCond.ttf') format('truetype'),
+    url('MyriadProBoldCond.svg#MyriadProBoldCond') format('svg');
+}
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-weight: 700;
+    font-style: italic;
+    src: url('MyriadProBoldCondIt.eot');
+    src: url('MyriadProBoldCondIt.eot') format('embedded-opentype'),
+    url('MyriadProBoldCondIt.woff2') format('woff2'),
+    url('MyriadProBoldCondIt.woff') format('woff'),
+    url('MyriadProBoldCondIt.ttf') format('truetype'),
+    url('MyriadProBoldCondIt.svg#MyriadProBoldCondIt') format('svg');
+}
+
+
+@font-face {
+    font-family: 'CoHeadline-Regular';
+    font-style: normal;
+    src: url('CoHeadline-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'MyriadProLight';
+    src: url('MyriadPro-Light.otf');
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+@font-face {
+    font-family:'MyriadProBold';
+    src: url('MyriadPro-Bold_0.otf');
+    font-weight: 500 !important;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+@font-face {
+    font-family:'Dalton';
+    src: url('Dalton Maag - Co Headline.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+@font-face {
+    font-family:'Co-Headline Regular';
+    src: url('CoHeadline-Regular.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}

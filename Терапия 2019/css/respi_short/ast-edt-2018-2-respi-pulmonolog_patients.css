@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#container {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: url("../../img/ast-edt-2018-2-respi-pulmonolog_target/bg.jpg");
+  background-size: contain;
+}
+.tree {
+  position: absolute;
+  width: 100%;
+}
+.header {
+  position: absolute;
+  top: 56px;
+  left: 72px;
+  display: flex;
+  align-items: center;
+}
+.header .header__img {
+  min-width: 35px;
+  max-width: 35px;
+  height: 35px;
+}
+.header .header__content {
+  font-size: 23px;
+  padding-left: 18px;
+  color: #4B78BA;
+  font-family: 'Co-Headline Regular', sans-serif;
+}
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 768px;
+  opacity: 0;
+  transition: .5s;
+  pointer-events: none;
+}
+.screen.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.screen--animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1.5s;
+}
+.screen--animation .target {
+  position: absolute;
+  width: 1029px;
+  top: -2px;
+  left: -5px;
+  animation: scale-out 2s 1s forwards;
+}
+.screen--animation .yellow-target {
+  position: absolute;
+  width: 592px;
+  top: 83px;
+  left: 227px;
+  opacity: 0;
+  animation: scale-in 4s 1s forwards;
+}
+.screen--animation .patients {
+  position: absolute;
+  top: 305px;
+  left: 90px;
+  overflow: visible;
+}
+.screen--animation .patients__row {
+  display: flex;
+  overflow: visible;
+  margin-top: 6px;
+}
+.screen--animation .patients__patient {
+  overflow: visible;
+  width: 43px;
+  height: 63.7px;
+  margin-left: -1.2px;
+  margin-right: 1px;
+  transition: 1s;
+  background: url('../../img/ast-edt-2018-2-respi-pulmonolog_patients/naked_man.png');
+  background-size: contain;
+  will-change: opacity;
+  animation: animOpacity 1s 2s forwards;
+}
+.screen--animation .patients__patient--first {
+  animation: animOpacity 1s 3s forwards;
+}
+.screen--action {
+  transition: 1.5s;
+}
+.trigger {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+  z-index: 2;
+  width: 722px;
+  height: 77px;
+}
+.trigger__body {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 661px;
+  height: 37px;
+  border-radius: 20px;
+  overflow: visible;
+  box-sizing: border-box;
+  background: #E5E3E3;
+  border: 1px solid #999999;
+}
+.trigger__slider {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 325px;
+  height: 100%;
+  background: linear-gradient(to right, #c3684c 0%, #ce8551 100%);
+  box-shadow: 0 0 7px 3px #AD5545;
+  border-radius: 20px;
+  pointer-events: none;
+  transition: 1s;
+}
+.trigger__slider.animate {
+  transform: scaleX(1.1) translateX(293px);
+}
+.trigger__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-family: 'Co-Headline Regular', sans-serif;
+  font-size: 18px;
+  color: #808080;
+  transition: 1s;
+}
+.trigger__button.active {
+  color: #fff;
+}
+.trigger__left {
+  left: 44px;
+}
+.trigger__right {
+  left: 351px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: .2s;
+  pointer-events: none;
+}
+.overlay__bg {
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, #3d7880 0%, #4eb0ad 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  opacity: .5;
+}
+.counter {
+  position: absolute;
+  top: 167px;
+  left: 416px;
+  width: 213px;
+  text-align: center;
+  color: #3D7880;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s;
+}
+.counter__figure {
+  font-family: 'MyriadProBold', sans-serif;
+  font-size: 101px;
+}
+.counter__text {
+  font-family: 'Myriad Pro', sans-serif;
+  margin-top: -25px;
+}
+.counter__percent {
+  font-family: 'MyriadProBold', sans-serif;
+  font-size: 24px;
+}
+.counter.active {
+  opacity: 1;
+}
+.title {
+  position: absolute;
+  top: 185px;
+  left: 93px;
+  width: 833px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Co-Headline Regular', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  background: url('../../img/ast-edt-2018-2-respi-pulmonolog_patients/title-bg.png');
+  background-size: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s;
+}
+.title .big {
+  font-size: 34px;
+}
+.title p {
+  margin-top: -16px;
+  margin-left: 64px;
+}
+.title sup {
+  line-height: 0;
+  font-size: .6em;
+}
+.title.active {
+  opacity: 1;
+}
+.patients {
+  position: absolute;
+  top: 302px;
+  left: 90px;
+  overflow: visible;
+}
+.patients__row {
+  display: flex;
+  overflow: visible;
+  margin-top: 8px;
+}
+.patients__patient {
+  overflow: visible;
+  width: 44px;
+  height: 61.7px;
+  margin-left: -1.2px;
+  background: url('../../img/ast-edt-2018-2-respi-pulmonolog_patients/man.png');
+  background-size: contain;
+}
+.patients__patient.active {
+  background: url('../../img/ast-edt-2018-2-respi-pulmonolog_patients/man-chosen.png');
+  background-size: contain;
+}
+.buttons {
+  position: absolute;
+  top: 667px;
+  left: 396px;
+  width: 285px;
+  height: 40px;
+}
+.buttons__button {
+  position: absolute;
+  height: 30px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #3D7880 0%, #4EB0AD 100%);
+  font-family: 'Myriad Pro', sans-serif;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+}
+.buttons__button--clear {
+  left: 0;
+  width: 104px;
+  background: linear-gradient(to right, #7a7e80 0%, #aaadb0 100%);
+}
+.buttons__button--clear.colored {
+  background: linear-gradient(to right, #3D7880 0%, #4EB0AD 100%);
+}
+.buttons__button--check {
+  left: 62px;
+  width: 119px;
+}
+.buttons__button--show-popup {
+  left: 7px;
+  width: 205px;
+}
+.buttons__button--hide-popup {
+  top: 367px;
+  left: 321px;
+  width: 205px;
+}
+.buttons__button.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+.popup {
+  position: absolute;
+  top: 300px;
+  left: 90px;
+  width: 866px;
+  height: 400px;
+  z-index: 1;
+  background: url('../../img/ast-edt-2018-2-respi-pulmonolog_patients/table-bg.png');
+  background-size: cover;
+  opacity: 0;
+  transition: .5s;
+  pointer-events: none;
+}
+.popup.active {
+  opacity: 1;
+  pointer-events: none;
+}
+.table {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  display: flex;
+}
+.table__column {
+  width: 212px;
+}
+.table__column--1 {
+  width: 409px;
+}
+.table__column--1 .table__row {
+  padding-left: 50px;
+  justify-content: flex-start;
+}
+.table__row {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Myriad Pro', sans-serif;
+  color: #4D4D4D;
+}
+.table__row:nth-child(2n) {
+  background: #DFF2FD;
+}
+.table__row--head {
+  height: 87px;
+  display: flex;
+  flex-flow: column nowrap;
+  font-style: italic;
+  font-size: 20px;
+}
+.table__row--abs {
+  position: relative;
+}
+.table__row--abs .table-round {
+  position: absolute;
+  width: 58px;
+  top: 0;
+  left: 80px;
+}
+.table__row--abs .table-text {
+  position: absolute;
+  top: 11px;
+  left: 85px;
+}
+.table__img {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  margin-bottom: 5px;
+}
+.table--right .table__column {
+  width: 153px;
+}
+.table--right .table__column--1 {
+  width: 372px;
+}
+.table--right .table__column--1 .table__row {
+  padding-left: 21px;
+}
+.table .big {
+  font-size: 26px;
+  font-weight: bold;
+}
+.table sup {
+  margin-top: -10px;
+  font-size: .7em;
+}
+.readout {
+  position: absolute;
+  top: 288px;
+  left: 54px;
+  font-size: 21px;
+  font-family: 'MyriadProBold', sans-serif;
+  color: #4D4D4D;
+}
+.readout--right {
+  top: 282px;
+  left: 26px;
+  width: 538px;
+}
+.circle-img {
+  position: absolute;
+  width: 205px;
+  top: 256px;
+  left: 586px;
+}
+.text-in-circle {
+  position: absolute;
+  top: 316px;
+  left: 658px;
+  font-size: 19px;
+  font-family: 'MyriadProBold', sans-serif;
+  color: #4D4D4D;
+}
+.text-in-circle .big-big {
+  font-size: 2em;
+}
+.hand {
+  position: absolute;
+  width: 64px;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
+}
+.hand--1 {
+  top: 327px;
+  left: 88px;
+  animation: moving 3s 6s forwards;
+}
+.hand--2 {
+  top: 670px;
+  left: 539px;
+  z-index: 2;
+  animation: opacity 1s 9s forwards;
+}
+.hand--3 {
+  top: 127px;
+  left: 651px;
+  z-index: 2;
+  animation: opacity 1s 10s forwards;
+}
+.footer {
+  position: absolute;
+  top: 670px;
+  width: 1024px;
+  height: 93px;
+  padding: 0 26px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity .5s;
+  pointer-events: none;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__links {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+  width: 850px;
+  font-size: 11px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-style: italic;
+  overflow: visible;
+  opacity: 0;
+  transition: .3s;
+}
+.footer__links.active {
+  opacity: 1;
+}
+.footer__links ol,
+.footer__links li {
+  overflow: visible;
+}
+.footer .link-button {
+  width: 62px;
+  height: 21px;
+}
+.footer .logo {
+  margin-top: 45px;
+  width: 93px;
+  height: 26px;
+}
+.footer.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.italic {
+  font-style: italic;
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.buttons__button.active .images-button-active {
+  opacity: 1;
+}
+.sight.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+.hand.active {
+  animation: moving 3s .5s forwards;
+}
+.sight-shadow.active {
+  animation: moving 3s .5s forwards;
+}
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scale-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.06) translateX(-6690px) translateY(-750px);
+  }
+}
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.045) translateX(-9191px) translateY(-870px);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.045) translateX(-9191px) translateY(-870px);
+  }
+}
+@keyframes animOpacity {
+  100% {
+    background: url('../../img/ast-edt-2018-2-respi-pulmonolog_patients/man.png');
+    background-size: contain;
+  }
+}
+/*# sourceMappingURL=ast-edt-2018-2-respi-pulmonolog_patients.css.map */

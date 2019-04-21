@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/respi_short/ast-edt-2018-2-respi-pulmonolog_patients.css">
+
+    <!-- remove-->
+    <link rel="stylesheet" href="css/jquery/jquery-ui.css">
+
+</head>
+<body>
+<div id="container">
+    <!-- Предзагрузка картинки для анимации-->
+    <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/man.png" style="display: none">
+    <!---->
+    <div class="js-screen-animation screen screen--animation active">
+        <div class="patients">
+            <div class="patients__row">
+                <div class="patients__patient patients__patient--first"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+            </div>
+            <div class="patients__row">
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+            </div>
+            <div class="patients__row">
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+            </div>
+            <div class="patients__row">
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+            </div>
+            <div class="patients__row">
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+                <div class="patients__patient"></div>
+            </div>
+        </div>
+        <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/target.png" alt="" class="yellow-target">
+        <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/naked_target.png" alt="" class="target">
+
+        <footer class="js-footer footer">
+            <!--<div class="js-link-button link-button">-->
+            <!--Ссылки-->
+            <!--</div>-->
+            <img src="img/common/logo-dark.png" alt="" class="footer__logo">
+            <div class="js-links footer__links">
+
+            </div>
+        </footer>
+    </div>
+    <div class="js-screen-action screen screen--action">
+
+        <div class="header">
+            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/disc.png" alt="" class="header__img">
+            <div class="header__content">
+                Распространенность возбудителей, продуцирующих β-лактамазы
+            </div>
+        </div>
+        <div class="trigger">
+            <div class="trigger__body">
+                <div class="js-slider trigger__slider"></div>
+                <div class="js-button trigger__button trigger__left active" data-button="left">При остром среднем отите
+                </div>
+                <div class="js-button trigger__button trigger__right" data-button="right">При внебольничной пневмонии</div>
+            </div>
+        </div>
+        <div class="js-screen screen screen--left active">
+            <div class="js-counter counter active">
+                <span class="js-figure-left counter__figure">0</span><span class="counter__percent">%</span>
+                <div class="js-counter-text counter__text">пациентов</div>
+            </div>
+            <div class="js-title title">
+                <p>
+                    Лишь около <span class="big">5%</span> пациентов с ОСО может потребоваться<br>
+                    назначение амоксициллина/клавулановой кислоты<sup>1,2</sup>
+                </p>
+            </div>
+            <div class="patients">
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-1 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-6"></div>
+                    <div class="patients__patient patients__patient-11"></div>
+                    <div class="patients__patient patients__patient-16"></div>
+                    <div class="patients__patient patients__patient-21"></div>
+                    <div class="patients__patient patients__patient-26"></div>
+                    <div class="patients__patient patients__patient-31"></div>
+                    <div class="patients__patient patients__patient-36"></div>
+                    <div class="patients__patient patients__patient-41"></div>
+                    <div class="patients__patient patients__patient-46" ></div>
+                    <div class="patients__patient patients__patient-51" ></div>
+                    <div class="patients__patient patients__patient-56" ></div>
+                    <div class="patients__patient patients__patient-61" ></div>
+                    <div class="patients__patient patients__patient-66" ></div>
+                    <div class="patients__patient patients__patient-71" ></div>
+                    <div class="patients__patient patients__patient-76" ></div>
+                    <div class="patients__patient patients__patient-81" ></div>
+                    <div class="patients__patient patients__patient-86" ></div>
+                    <div class="patients__patient patients__patient-91" ></div>
+                    <div class="patients__patient patients__patient-96" ></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-2 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-7"></div>
+                    <div class="patients__patient patients__patient-12"></div>
+                    <div class="patients__patient patients__patient-17"></div>
+                    <div class="patients__patient patients__patient-22"></div>
+                    <div class="patients__patient patients__patient-27"></div>
+                    <div class="patients__patient patients__patient-32"></div>
+                    <div class="patients__patient patients__patient-37"></div>
+                    <div class="patients__patient patients__patient-42"></div>
+                    <div class="patients__patient patients__patient-47" ></div>
+                    <div class="patients__patient patients__patient-52" ></div>
+                    <div class="patients__patient patients__patient-57" ></div>
+                    <div class="patients__patient patients__patient-62" ></div>
+                    <div class="patients__patient patients__patient-67" ></div>
+                    <div class="patients__patient patients__patient-72" ></div>
+                    <div class="patients__patient patients__patient-77" ></div>
+                    <div class="patients__patient patients__patient-82" ></div>
+                    <div class="patients__patient patients__patient-87" ></div>
+                    <div class="patients__patient patients__patient-92" ></div>
+                    <div class="patients__patient patients__patient-97" ></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-3 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-8"></div>
+                    <div class="patients__patient patients__patient-13"></div>
+                    <div class="patients__patient patients__patient-18"></div>
+                    <div class="patients__patient patients__patient-23"></div>
+                    <div class="patients__patient patients__patient-28"></div>
+                    <div class="patients__patient patients__patient-33"></div>
+                    <div class="patients__patient patients__patient-38"></div>
+                    <div class="patients__patient patients__patient-43"></div>
+                    <div class="patients__patient patients__patient-48"></div>
+                    <div class="patients__patient patients__patient-53"></div>
+                    <div class="patients__patient patients__patient-58"></div>
+                    <div class="patients__patient patients__patient-63"></div>
+                    <div class="patients__patient patients__patient-68"></div>
+                    <div class="patients__patient patients__patient-73"></div>
+                    <div class="patients__patient patients__patient-78"></div>
+                    <div class="patients__patient patients__patient-83"></div>
+                    <div class="patients__patient patients__patient-88"></div>
+                    <div class="patients__patient patients__patient-93"></div>
+                    <div class="patients__patient patients__patient-98"></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-4 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-9"></div>
+                    <div class="patients__patient patients__patient-14"></div>
+                    <div class="patients__patient patients__patient-19"></div>
+                    <div class="patients__patient patients__patient-24"></div>
+                    <div class="patients__patient patients__patient-29"></div>
+                    <div class="patients__patient patients__patient-34"></div>
+                    <div class="patients__patient patients__patient-39"></div>
+                    <div class="patients__patient patients__patient-44"></div>
+                    <div class="patients__patient patients__patient-49"></div>
+                    <div class="patients__patient patients__patient-54"></div>
+                    <div class="patients__patient patients__patient-59"></div>
+                    <div class="patients__patient patients__patient-64"></div>
+                    <div class="patients__patient patients__patient-69"></div>
+                    <div class="patients__patient patients__patient-74"></div>
+                    <div class="patients__patient patients__patient-79"></div>
+                    <div class="patients__patient patients__patient-84"></div>
+                    <div class="patients__patient patients__patient-89"></div>
+                    <div class="patients__patient patients__patient-94"></div>
+                    <div class="patients__patient patients__patient-99"></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-5 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-10"></div>
+                    <div class="patients__patient patients__patient-15"></div>
+                    <div class="patients__patient patients__patient-20"></div>
+                    <div class="patients__patient patients__patient-25"></div>
+                    <div class="patients__patient patients__patient-30"></div>
+                    <div class="patients__patient patients__patient-35"></div>
+                    <div class="patients__patient patients__patient-40"></div>
+                    <div class="patients__patient patients__patient-45"></div>
+                    <div class="patients__patient patients__patient-50"></div>
+                    <div class="patients__patient patients__patient-55"></div>
+                    <div class="patients__patient patients__patient-60"></div>
+                    <div class="patients__patient patients__patient-65"></div>
+                    <div class="patients__patient patients__patient-70"></div>
+                    <div class="patients__patient patients__patient-75"></div>
+                    <div class="patients__patient patients__patient-80"></div>
+                    <div class="patients__patient patients__patient-85"></div>
+                    <div class="patients__patient patients__patient-90"></div>
+                    <div class="patients__patient patients__patient-95"></div>
+                    <div class="patients__patient patients__patient-100"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <!--<div class="js-clear-btn buttons__button buttons__button&#45;&#45;clear active">Очистить</div>-->
+                <div class="js-check-btn buttons__button buttons__button--check active">Проверить</div>
+                <div class="js-show-popup-btn buttons__button buttons__button--show-popup">Показать таблицу</div>
+            </div>
+            <div id="left-range" class=" ui-range active"></div>
+            <div class="js-popup popup">
+                <div class="table">
+                    <div class="table__column table__column--1">
+                        <div class="table__row table__row--head"></div>
+                        <div class="table__row">Распространенность при ОСО<sup>1</sup></div>
+                        <div class="table__row">Доля штаммов, продуцирующих β-лактамазы<sup>2</sup></div>
+                        <div class="table__row">
+                            Доля продуцентов β-лактамаз от общего<br>
+                            числа возбудителей
+                        </div>
+                    </div>
+                    <div class="table__column">
+                        <div class="table__row table__row--head">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/pneumo.png" alt="" class="table__img">
+                            <p>S. pneumoniae</p>
+                        </div>
+                        <div class="table__row">до 48%</div>
+                        <div class="table__row">Не продуцирует</div>
+                        <div class="table__row">0%</div>
+                    </div>
+                    <div class="table__column">
+                        <div class="table__row table__row--head">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/influen.png" alt="" class="table__img">
+                            <p>H. influenzae</p>
+                        </div>
+                        <div class="table__row">до 42%</div>
+                        <div class="table__row">до 12,2%</div>
+                        <div class="table__row table__row--abs">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/round.png" alt="" class="table-round">
+                            <p class="table-text"><span class="big">5,1</span>%
+                        </div>
+                    </div>
+
+                </div>
+                <div class="readout">
+                    Добавление клавулановой кислоты к амоксициллину необходимо только в случае<br>
+                    продукции возбудителем β-лактамаз<sup>1,2</sup>
+                </div>
+
+                <div class="js-hide-popup-btn buttons__button buttons__button--hide-popup">Скрыть таблицу</div>
+            </div>
+            <footer class="js-footer footer active">
+                <div class="footer__row">
+                    <img src="img/common/links.png" alt="" class="js-link-button link-button">
+                    <img src="img/common/logo-dark.png" alt="" class="logo">
+                </div>
+                <div class="js-links footer__links">
+                    <ol>
+                        <li> Grubb MS, Spaugh DC. Microbiology of acute otitis media, Puget Sound region, 2005–2009. Clin
+                            Pediatr (Phila). 2010;49(8): 727–730
+                        </li>
+                        <li> МАКМАХ, НИИАХ. Онлайн платформа анализа данных резистентности к антимикробным препаратам в
+                            России
+                            (версия 1.5 от 09.07.2018). (Чувствительность H. influenzae к ампициллину за период 2010-2017
+                            гг.
+                            составила 87,77%. http://map.antibiotic.ru/; дата обращения 15.10.2018).
+                        </li>
+                    </ol>
+                </div>
+
+            </footer>
+            <div class="hands">
+                <img src="img/common/hand.png" alt="" class="hand hand--1">
+                <img src="img/common/hand.png" alt="" class="hand hand--2">
+                <img src="img/common/hand.png" alt="" class="hand hand--3">
+            </div>
+        </div>
+        <div class="js-screen screen screen--right">
+            <div class="js-counter counter active">
+                <span class="js-figure-right counter__figure">0</span><span class="counter__percent">%</span>
+                <div class="js-counter-text counter__text">пациентов</div>
+            </div>
+            <div class="js-title title">
+                <p>
+                    Лишь около <span class="big">3%</span> пациентов с ВП может потребоваться<br>
+                    назначение амоксициллина/клавулановой кислоты<sup>1,2</sup>
+                </p>
+            </div>
+            <div class="patients">
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-1 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-6"></div>
+                    <div class="patients__patient patients__patient-11"></div>
+                    <div class="patients__patient patients__patient-16"></div>
+                    <div class="patients__patient patients__patient-21"></div>
+                    <div class="patients__patient patients__patient-26"></div>
+                    <div class="patients__patient patients__patient-31"></div>
+                    <div class="patients__patient patients__patient-36"></div>
+                    <div class="patients__patient patients__patient-41"></div>
+                    <div class="patients__patient patients__patient-46" ></div>
+                    <div class="patients__patient patients__patient-51" ></div>
+                    <div class="patients__patient patients__patient-56" ></div>
+                    <div class="patients__patient patients__patient-61" ></div>
+                    <div class="patients__patient patients__patient-66" ></div>
+                    <div class="patients__patient patients__patient-71" ></div>
+                    <div class="patients__patient patients__patient-76" ></div>
+                    <div class="patients__patient patients__patient-81" ></div>
+                    <div class="patients__patient patients__patient-86" ></div>
+                    <div class="patients__patient patients__patient-91" ></div>
+                    <div class="patients__patient patients__patient-96" ></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-2 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-7"></div>
+                    <div class="patients__patient patients__patient-12"></div>
+                    <div class="patients__patient patients__patient-17"></div>
+                    <div class="patients__patient patients__patient-22"></div>
+                    <div class="patients__patient patients__patient-27"></div>
+                    <div class="patients__patient patients__patient-32"></div>
+                    <div class="patients__patient patients__patient-37"></div>
+                    <div class="patients__patient patients__patient-42"></div>
+                    <div class="patients__patient patients__patient-47" ></div>
+                    <div class="patients__patient patients__patient-52" ></div>
+                    <div class="patients__patient patients__patient-57" ></div>
+                    <div class="patients__patient patients__patient-62" ></div>
+                    <div class="patients__patient patients__patient-67" ></div>
+                    <div class="patients__patient patients__patient-72" ></div>
+                    <div class="patients__patient patients__patient-77" ></div>
+                    <div class="patients__patient patients__patient-82" ></div>
+                    <div class="patients__patient patients__patient-87" ></div>
+                    <div class="patients__patient patients__patient-92" ></div>
+                    <div class="patients__patient patients__patient-97" ></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-3 js-right-answer"></div>
+                    <div class="patients__patient patients__patient-8"></div>
+                    <div class="patients__patient patients__patient-13"></div>
+                    <div class="patients__patient patients__patient-18"></div>
+                    <div class="patients__patient patients__patient-23"></div>
+                    <div class="patients__patient patients__patient-28"></div>
+                    <div class="patients__patient patients__patient-33"></div>
+                    <div class="patients__patient patients__patient-38"></div>
+                    <div class="patients__patient patients__patient-43"></div>
+                    <div class="patients__patient patients__patient-48"></div>
+                    <div class="patients__patient patients__patient-53"></div>
+                    <div class="patients__patient patients__patient-58"></div>
+                    <div class="patients__patient patients__patient-63"></div>
+                    <div class="patients__patient patients__patient-68"></div>
+                    <div class="patients__patient patients__patient-73"></div>
+                    <div class="patients__patient patients__patient-78"></div>
+                    <div class="patients__patient patients__patient-83"></div>
+                    <div class="patients__patient patients__patient-88"></div>
+                    <div class="patients__patient patients__patient-93"></div>
+                    <div class="patients__patient patients__patient-98"></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-4"></div>
+                    <div class="patients__patient patients__patient-9"></div>
+                    <div class="patients__patient patients__patient-14"></div>
+                    <div class="patients__patient patients__patient-19"></div>
+                    <div class="patients__patient patients__patient-24"></div>
+                    <div class="patients__patient patients__patient-29"></div>
+                    <div class="patients__patient patients__patient-34"></div>
+                    <div class="patients__patient patients__patient-39"></div>
+                    <div class="patients__patient patients__patient-44"></div>
+                    <div class="patients__patient patients__patient-49"></div>
+                    <div class="patients__patient patients__patient-54"></div>
+                    <div class="patients__patient patients__patient-59"></div>
+                    <div class="patients__patient patients__patient-64"></div>
+                    <div class="patients__patient patients__patient-69"></div>
+                    <div class="patients__patient patients__patient-74"></div>
+                    <div class="patients__patient patients__patient-79"></div>
+                    <div class="patients__patient patients__patient-84"></div>
+                    <div class="patients__patient patients__patient-89"></div>
+                    <div class="patients__patient patients__patient-94"></div>
+                    <div class="patients__patient patients__patient-99"></div>
+                </div>
+                <div class="patients__row">
+                    <div class="patients__patient patients__patient-5"></div>
+                    <div class="patients__patient patients__patient-10"></div>
+                    <div class="patients__patient patients__patient-15"></div>
+                    <div class="patients__patient patients__patient-20"></div>
+                    <div class="patients__patient patients__patient-25"></div>
+                    <div class="patients__patient patients__patient-30"></div>
+                    <div class="patients__patient patients__patient-35"></div>
+                    <div class="patients__patient patients__patient-40"></div>
+                    <div class="patients__patient patients__patient-45"></div>
+                    <div class="patients__patient patients__patient-50"></div>
+                    <div class="patients__patient patients__patient-55"></div>
+                    <div class="patients__patient patients__patient-60"></div>
+                    <div class="patients__patient patients__patient-65"></div>
+                    <div class="patients__patient patients__patient-70"></div>
+                    <div class="patients__patient patients__patient-75"></div>
+                    <div class="patients__patient patients__patient-80"></div>
+                    <div class="patients__patient patients__patient-85"></div>
+                    <div class="patients__patient patients__patient-90"></div>
+                    <div class="patients__patient patients__patient-95"></div>
+                    <div class="patients__patient patients__patient-100"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <!--<div class="js-clear-btn buttons__button buttons__button&#45;&#45;clear active">Очистить</div>-->
+                <div class="js-check-btn buttons__button buttons__button--check active">Проверить</div>
+                <div class="js-show-popup-btn buttons__button buttons__button--show-popup">Показать таблицу</div>
+            </div>
+            <div id="right-range" class="ui-range"></div>
+            <div class="js-popup popup">
+                <div class="table table--right">
+                    <div class="table__column table__column--1">
+                        <div class="table__row table__row--head"></div>
+                        <div class="table__row">Распространенность при ВП<sup>1</sup></div>
+                        <div class="table__row">Доля штаммов, продуцирующих β-лактамазы<sup>2</sup></div>
+                        <div class="table__row">
+                            Доля продуцентов β-лактамаз от общего<br>
+                            числа возбудителей
+                        </div>
+                    </div>
+                    <div class="table__column">
+                        <div class="table__row table__row--head">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/pneumo.png" alt="" class="table__img">
+                            <p>S. pneumoniae</p>
+                        </div>
+                        <div class="table__row">38%</div>
+                        <div class="table__row">Не продуцирует</div>
+                        <div class="table__row">0%</div>
+                    </div>
+                    <div class="table__column">
+                        <div class="table__row table__row--head">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/influen.png" alt="" class="table__img">
+                            <p>H. influenzae</p>
+                        </div>
+                        <div class="table__row">13%</div>
+                        <div class="table__row">до 12,2%</div>
+                        <div class="table__row table__row--abs">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/round.png" alt="" class="table-round">
+                            <p class="table-text"><span class="big">1,6</span>%</div>
+                        </p>
+                    </div>
+                    <div class="table__column">
+                        <div class="table__row table__row--head">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/aureus.png" alt="" class="table__img">
+                            <p>S. aureus</p>
+                        </div>
+                        <div class="table__row">1,5%</div>
+                        <div class="table__row">100%</div>
+                        <div class="table__row table__row--abs">
+                            <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/round.png" alt="" class="table-round">
+                            <p class="table-text"><span class="big">1,5</span>%</div>
+                        </p>
+                    </div>
+
+                </div>
+                <img src="img/ast-edt-2018-2-respi-pulmonolog_patients/circle-img.png" alt="" class="circle-img">
+                <p class="text-in-circle"><span class="big-big">3,1</span>%</p>
+                <div class="readout readout--right">
+                    Добавление клавулановой кислоты к амоксициллину
+                    необходимо только в случае продукции возбудителем
+                    β-лактамаз<sup>1,2</sup>
+                </div>
+                <div class="js-hide-popup-btn buttons__button buttons__button--hide-popup">Скрыть таблицу</div>
+            </div>
+            <footer class="js-footer footer active">
+                <div class="footer__row">
+                    <img src="img/common/links.png" alt="" class="js-link-button link-button">
+                    <img src="img/common/logo-dark.png" alt="" class="logo">
+                </div>
+                <div class="js-links footer__links">
+                    <ol>
+                        <li> Welte T et al. Clinical and economic burden of community-acquired pneumonia among adults in
+                            Europe. Thorax. 2012 Jan;67(1):71-9.
+                        </li>
+                        <li> МАКМАХ, НИИАХ. Онлайн платформа анализа данных резистентности к антимикробным препаратам в
+                            России
+                            (версия 1.5 от 09.07.2018). (Чувствительность H. influenzae к ампициллину за период 2010-2017
+                            гг.
+                            составила 87,77%. http://map.antibiotic.ru/; дата обращения 15.10.2018).
+                        </li>
+                    </ol>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.1.min.js?v=1463052525903"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!--  -->
+    <script src="js/communicate.js?v=1463052525841" type="text/javascript"></script>
+    <script src="js/slideAppLib.js?v=1465463546861" type="text/javascript"></script>
+    <script src="js/ast-edt-2018-2-respi-pulmonolog_patients/slide.js"></script>
+
+
+</div>
+</body>
+</html>

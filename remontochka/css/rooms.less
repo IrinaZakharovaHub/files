@@ -1,0 +1,233 @@
+@import "colors";
+
+.pictures {
+  display: flex;
+  width: 100%;
+}
+.carousel {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.carousel-inner {
+  display: flex;
+}
+.carousel-item.active {
+  display: flex;
+}
+.descr {
+  padding-bottom: 30px;
+  h1 {
+    color: @brown;
+  }
+  .name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    color: @grey;
+  }
+}
+.price-of-work {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: @blue;
+}
+.price-by-size {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+
+  h3 {
+    color: #fffa47;
+    text-shadow: 2px 1px 1px @dark-blue;
+    padding-top: 10px;
+  }
+  li {
+    color: #FFF;
+    list-style: none;
+    transition: 1s;
+  }
+
+  div[class^="size"] {
+    background: @blue;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 300px;
+    margin: 20px;
+    transition: 1s;
+    border-radius: 5px;
+    position: relative;
+    .shadow {
+      transition: 1s;
+      top: 1px;
+      position: absolute;
+      height: 100%;
+      width: 300px;
+      border-radius: 5px;
+    }
+    .price {
+      padding-bottom: 10px;
+      font-size: 26px;
+      font-weight: 500;
+      color: yellow;
+    }
+    &:hover {
+      background: @dark-blue;
+      box-shadow: 10px 10px 2px 2px #363636;
+      .shadow {
+        box-shadow: inset 4px 4px 3px @blue,inset 3px 3px 10px #fff;
+      }
+    }
+  }
+}
+.price-by-type-of-work {
+  text-align: center;
+  .menu {
+    cursor: pointer;
+    h3 {
+      border-bottom: 1px solid @blue;
+      padding: 3px;
+      margin-bottom: 0;
+      font-size: 18px;
+      background: #e8e0d9;
+      font-family: 'Jura', sans-serif;
+    }
+  }
+}
+.container {
+  .center {
+    text-align: center;
+  }
+  ul {
+    display: inline;
+  }
+  li {
+    font-family: 'Bad Script', cursive;
+    list-style: none;
+    //font-weight: 700;
+    padding: 5px;
+    font-size: 20px;
+    color: @night-blue;
+
+  }
+  .what {
+    font-family: 'Jura', sans-serif;
+    background: #ffe65a;
+    padding: 5px;
+  }
+}
+.some {
+  width: 50%;
+  background: #e8e0d9;
+  .__top {
+    display: flex;
+    flex-flow: row nowrap;
+    background: linear-gradient(to bottom, #639898, #e8e0d9);
+    padding: 20px;
+    h2 {
+      color: @night-blue;
+    }
+    .prices {
+      //color: #FFF;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      span {
+        background: yellow;
+        border-radius: 2px;
+        padding: 1px;
+      }
+    }
+  }
+  .__bottom {
+    width: 100%;
+    height: 200px;
+    table {
+      margin: 10px;
+      width: 80%;
+      tr:nth-child(2n) {
+        background: rgba(0,0,0,.1);
+      }
+    }
+  }
+}
+.w-50 {
+  height: 100%;
+  width: auto;
+}
+h1, h2 {
+  text-align: center;
+  color: @night-blue;
+  span {
+    font-size: 18px;
+  }
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+
+.main .price-by-type-of-work {
+  table {
+    //display: table;
+  }
+}
+
+
+@media all and (max-width: 980px) {
+  .price-of-work {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    background: #c1b39f;
+    position: relative;
+  }
+  .w-50 {
+    width: 100% !important;
+  }
+  .some {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(193, 179, 159, 0.7);
+    color: #fff;
+    font-weight: 700;
+    .__top {
+      padding: 7px;
+      background: @dark-blue;
+      .img {
+        display: none;
+      }
+      h3 {
+        font-size: 20px;
+        display: block;
+      }
+      .prices {
+        display: none;
+      }
+    }
+    .__bottom {
+      display: none;
+    }
+  }
+  .descr {
+    //margin-bottom: -15px;
+    padding: 5px;
+  }
+  .price-by-size {
+    div[class^="size"] {
+      margin: 5px;
+    }
+  }
+}

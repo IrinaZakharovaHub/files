@@ -1,0 +1,742 @@
+@regular: 'Myriad Pro', sans-serif;
+@headline:'Co-Headline Regular', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#container {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: url("../../img/ast-edt-2018-2-respi-pulmonolog_target/bg.jpg");
+  background-size: contain;
+}
+.tree {
+  position: absolute;
+  width: 100%;
+}
+.overlay {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  opacity: 0;
+  transition: .2s;
+  pointer-events: none;
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, #3d7880 0%,#4eb0ad 100%); /* Chrome10-25,Safari5.1-6 */
+    opacity: .5;
+  }
+  .block {
+    position: absolute;
+    top: 60px;
+    left: 43px;
+    width: 937px;
+    &__footboard {
+      width: 100%;
+    }
+    &__content {
+      display: flex;
+      padding-left: 10px;
+      font-family: @regular;
+      font-size: 19px;
+      line-height: 26px;
+      color: #4D4D4D;
+      margin-bottom: 14px;
+      &__img {
+        min-width: 37px;
+        max-width: 37px;
+        height: 37px;
+
+      }
+      &__text {
+      }
+      sup {
+        line-height: 0;
+      }
+    }
+    >.block__header {
+      position: absolute;
+      top: 78px;
+      left: 146px;
+      display: flex;
+      align-items: center;
+      .block__header__img {
+        min-width: 35px;
+        max-width: 35px;
+        height: 35px;
+      }
+      .block__header__content {
+        font-size: 23px;
+        padding-left: 18px;
+        color: #4B78BA;
+        font-family: @headline;
+      }
+    }
+    &__list {
+      position: absolute;
+      display: flex;
+      flex-flow: column nowrap;
+      .block__header {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -63px;
+        margin-bottom: 15px;
+        height: 152px;
+        &__img {
+          width: 130px;
+          &--liver {
+            width: 150px;
+          }
+        }
+        &__content {
+          margin-top: -21px;
+          font-size: 24px;
+          font-family: @regular;
+          font-weight: bold;
+          color: #333333;
+        }
+      }
+      &--bowel {
+        top: 124px;
+        left: 96px;
+        width: 474px;
+      }
+      &--liver {
+        top: 124px;
+        left: 550px;
+        width: 474px;
+      }
+    }
+    &__close {
+      position: absolute;
+      top: 18px;
+      right: 14px;
+      width: 50px;
+      height: 50px;
+    }
+    .links {
+      position: absolute;
+      bottom: 98px;
+      left: 107px;
+      width: 731px;
+      font-size: 10px;
+      font-family: @regular;
+      overflow: visible;
+      ol {
+        padding-left: 10px;
+      }
+      li {
+        overflow: visible;
+      }
+
+    }
+  }
+}
+.list {
+  position: absolute;
+  font-family: @regular;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2;
+  &.vertical-list {
+    top: 94px;
+    left: 512px;
+  }
+  &.horizontal-list {
+    top: 374px;
+    left: 234px;
+    display: flex;
+  }
+
+  &__figure {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 32px;
+    height: 35px;
+    &--s {
+      height: 32px;
+      width: 33px;
+    }
+    &--xs {
+      height: 24px;
+      width: 27px;
+    }
+    &--xxs {
+      height: 22px;
+      width: 19px;
+    }
+  }
+}
+.images {
+  &-target {
+    position: absolute;
+    width: 602px;
+    top: 84px;
+    left: 225px;
+  }
+  &-stomach {
+    position: absolute;
+    width: 240px;
+    top: 138px;
+    left: 14px;
+  }
+  &-liver {
+    position: absolute;
+    width: 236px;
+    top: 83px;
+    left: 767px;
+  }
+  &-info {
+    position: absolute;
+    width: 67px;
+    top: 568px;
+    left: 780px;
+  }
+  &-text {
+    position: absolute;
+    width: 227px;
+    top: 162px;
+    left: 539px;
+    transform: rotate(-1deg);
+    z-index: 2;
+  }
+
+  &-button--1 {
+    position: absolute;
+    top: -13px;
+    left: -15px;
+    width: 250px;
+  }
+  &-button--2 {
+    position: absolute;
+    top: -13px;
+    left: -15px;
+    width: 250px;
+  }
+  &-button-active--1, &-button-active--2 {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 223px;
+    opacity: 0;
+    transition: .4s;
+    pointer-events: none;
+  }
+
+  &-text--1 {
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    width: 133px;
+  }
+  &-text--2 {
+    position: absolute;
+    top: 4px;
+    left: 60px;
+    width: 133px;
+  }
+  &-sight {
+    position: absolute;
+    width: 169px;
+
+    opacity: 0;
+    transition: none;
+    pointer-events: none;
+  }
+  &-line-1 {
+    position: absolute;
+    width: 215px;
+    top: 402px;
+    left: 131px;
+  }
+  &-line-2 {
+    position: absolute;
+    width: 215px;
+    top: 248px;
+    left: 740px;
+  }
+}
+.buttons {
+  &__button {
+    position: absolute;
+    width: 218px;
+    height: 49px;
+    border-radius: 24px;
+    z-index: 1;
+    &--1 {
+      top: 657px;
+      left: 133px;
+    }
+    &--2 {
+      top: 657px;
+      left: 694px;
+    }
+    &.disabled {
+      opacity: .5;
+    }
+  }
+}
+.link-button {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 63px;
+  height: 23px;
+  background: #db6547;
+  color: #fff;
+  font-family: @regular;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+.fire {
+  width: 200px;
+  position: absolute;
+  top: 295px;
+  left: 436px;
+  opacity: 0;
+  z-index: 5;
+  pointer-events: none;
+  &.animate {
+    animation: fire .1s forwards;
+  }
+}
+.good {
+  pointer-events: none;
+  .bullet {
+    &--1 {
+      position: absolute;
+      top: 354px;
+      left: 494px;
+      width: 57px;
+      opacity: 0;
+    }
+  }
+  .smoke {
+    pointer-events: none;
+    &--1 {
+      position: absolute;
+      top: 160px;
+      left: 461px;
+      width: 250px;
+      opacity: 0;
+    }
+  }
+  .stomach {
+    position: absolute;
+    width: 205px;
+    top: 140px;
+    left: 31px;
+    opacity: 0;
+    transition: 1s;
+  }
+  .liver {
+    position: absolute;
+    width: 189px;
+    top: 91px;
+    left: 788px;
+    opacity: 0;
+    transition: 1s;
+  }
+  .grey {
+    position: absolute;
+    top: 85px;
+    width: 603px;
+    left: 224px;
+    opacity: 0;
+  }
+  &.animate {
+    .bullet {
+      transition: opacity;
+      transition-delay: .1s;
+      opacity: 1;
+    }
+    .smoke {
+      animation: ease-out smoke 12s forwards;
+    }
+    .grey {
+      opacity: 1;
+    }
+    .stomach {
+      opacity: 1;
+    }
+    .liver {
+      opacity: 1;
+    }
+  }
+}
+.bad {
+  .grey {
+    position: absolute;
+    width: 599px;
+    top: 86px;
+    left: 226px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .bullet {
+    &--2 {
+      position: absolute;
+      width: 526px;
+      top: 113px;
+      left: 272px;
+      opacity: 0;
+    }
+  }
+  .smoke {
+    pointer-events: none;
+    &--1 {
+      position: absolute;
+      top: 160px;
+      left: 461px;
+      width: 250px;
+      opacity: 0;
+    }
+    &--2 {
+      position: absolute;
+      top: 260px;
+      left: 461px;
+      width: 450px;
+      opacity: 0;
+      transform: rotate(-20deg);
+    }
+    &--3 {
+      position: absolute;
+      top: 50px;
+      width: 1500px;
+      opacity: 0;
+    }
+  }
+  .stomach {
+    position: absolute;
+    width: 203px;
+    top: 145px;
+    left: 31px;
+    opacity: 0;
+    transition: 1s;
+  }
+  .liver {
+    position: absolute;
+    width: 189px;
+    top: 91px;
+    left: 788px;
+    opacity: 0;
+    transition: 1s;
+  }
+  .fire {
+    &--2 {
+      top: 255px;
+      left: 225px;
+    }
+    &--3 {
+      top: 57px;
+      left: 520px;
+    }
+    &--4 {
+      top: 500px;
+      left: 300px;
+    }
+    &--5 {
+      top: 361px;
+      left: 656px;
+    }
+    &--6 {
+      top: 420px;
+      left: 500px;
+    }
+
+  }
+  &.animate {
+    .grey {
+      opacity: 1;
+    }
+    .bullet {
+      opacity: 1;
+    }
+    .smoke--1 {
+      animation: ease-out smoke 12s forwards;
+    }
+    .smoke--3 {
+      animation: ease-in smoke3 10s forwards;
+    }
+    .fire {
+      &--2 {
+        animation: fire .1s .05s forwards;
+      }
+      &--3 {
+        animation: fire .1s .1s forwards;
+      }
+      &--4 {
+        animation: fire .1s .15s forwards;
+      }
+      &--5 {
+        animation: fire .1s .2s forwards;
+      }
+      &--6 {
+        animation: fire .1s .25s forwards;
+      }
+    }
+    .stomach {
+      opacity: 1;
+    }
+    .liver {
+      opacity: 1;
+    }
+  }
+}
+.vertical-text {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: grey;
+  font-family: @regular;
+  top: 570px;
+  left: 892px;
+  font-size: 13px;
+
+}
+.hand {
+  position: absolute;
+  width: 64px;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
+  z-index: 1;
+  &--1 {
+    top: 669px;
+    left: 221px;
+    animation: opacity 1s forwards;
+  }
+  &--2 {
+    top: 669px;
+    left: 796px;
+    animation: opacity 1s 1s forwards;
+  }
+  &--3 {
+    top: 646px;
+    left: 499px;
+    z-index: 99;
+  }
+
+
+}
+.footer {
+  position: absolute;
+  top: 656px;
+  left: 26px;
+  width: ~'calc(100% - 26px)';
+  height: 114px;
+  box-sizing: border-box;
+
+  &__links {
+    position: absolute;
+    top: 72px;
+    left: 45px;
+    width: 850px;
+    font-size: 9px;
+    font-family: @regular;
+    font-style: italic;
+    overflow: visible;
+
+    opacity: 0;
+    transition: .3s;
+    &.active {
+      opacity: 1;
+    }
+    ol, li {
+      overflow: visible;
+    }
+  }
+  &__link-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px;
+    height: 21px;
+    z-index: 1;
+  }
+  &__logo {
+    position: absolute;
+    top: 62px;
+    left: 880px;
+    width: 93px;
+    height: 26px;
+  }
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.sight-shadow {
+  width: 169px;
+  position: absolute;
+  top: 578px;
+  left: 439px;
+  opacity: 0;
+  transition: .5s;
+  pointer-events: none;
+}
+.splinter-1,
+.splinter-2,
+.splinter-3,
+.splinter-4,
+.splinter-5,
+.splinter-6 {
+
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
+
+}
+.splinter-1 {
+
+  left: 500px;
+  top: 370px;
+
+}
+.splinter-2 {
+
+  left: 500px;
+  top: 396px;
+
+}
+.splinter-3 {
+
+  left: 496px;
+  top: 402px;
+
+}
+.splinter-4 {
+
+  left: 460px;
+  top: 420px;
+
+}
+.splinter-5 {
+
+  left: 520px;
+  top: 360px;
+
+}
+.splinter-6 {
+
+  left: 511px;
+  top: 360px;
+
+}
+
+.italic {
+  font-style: italic;
+}
+
+@keyframes fire {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(400px) translateY(-50px) rotate(-30deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(400px) translateY(-50px) rotate(-30deg);
+  }
+}
+@keyframes smoke2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(400px) translateY(50px) rotate(-10deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(400px) translateY(50px) rotate(-10deg);
+  }
+}
+@keyframes smoke3 {
+  0% {
+    //transform: scale(.5);
+  }
+  5% {
+    opacity: .5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .8;
+    transform: translateX(200px) translateY(50px) scale(1.5);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(200px) translateY(50px) scale(1.5);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes moving {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+
+}
+
+// JS
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.buttons__button.active .images-button-active {
+  opacity: 1;
+}
+.sight.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+.hand.active {
+  animation: moving 3s .5s forwards;
+}
+.sight-shadow.active {
+  animation: moving 3s .5s forwards;
+}

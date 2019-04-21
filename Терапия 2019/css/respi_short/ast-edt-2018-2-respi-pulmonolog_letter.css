@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#container {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: url("../../img/ast-edt-2018-2-respi-pulmonolog_letter/bg.png");
+  background-size: contain;
+}
+.main {
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+}
+.main__img {
+  position: absolute;
+  top: 45px;
+  left: -26px;
+  max-width: 100%;
+}
+.main__button {
+  position: absolute;
+  top: 456px;
+  left: 550px;
+  width: 300px;
+  height: 200px;
+}
+.main.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup {
+  position: absolute;
+  top: 166px;
+  left: -42px;
+  width: 100%;
+  height: 524px;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+}
+.popup__img {
+  position: absolute;
+  top: -145px;
+  left: -22px;
+  width: 1092px;
+}
+.popup.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.hand {
+  position: absolute;
+  width: 64px;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
+  z-index: 1;
+}
+.hand--1 {
+  top: 539px;
+  left: 642px;
+  animation: opacity 1s 1s forwards;
+}
+.footer {
+  position: absolute;
+  top: 669px;
+  left: 26px;
+  width: calc(100% - 26px);
+  height: 114px;
+  box-sizing: border-box;
+}
+.footer__links {
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  width: 833px;
+  font-size: 9px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-style: italic;
+  overflow: visible;
+  opacity: 0;
+  transition: .3s;
+}
+.footer__links.active {
+  opacity: 1;
+}
+.footer__links ol,
+.footer__links li {
+  overflow: visible;
+}
+.footer__link-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 21px;
+  z-index: 1;
+}
+.footer__logo {
+  position: absolute;
+  top: 50px;
+  left: 875px;
+  width: 93px;
+  height: 26px;
+}
+.footer.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=ast-edt-2018-2-respi-pulmonolog_letter.css.map */

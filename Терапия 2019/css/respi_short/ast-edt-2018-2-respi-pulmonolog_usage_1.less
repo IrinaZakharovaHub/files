@@ -1,0 +1,212 @@
+@regular: 'Myriad Pro', sans-serif;
+@bold: 'MyriadProBold', sans-serif;
+@headline: 'Co-Headline Regular', sans-serif;
+@baseColor: #4D4D4D;
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  background: url('../../img/ast-edt-2018-2-respi-pulmonolog_usage/bg.png');
+  background-size: contain;
+}
+.list {
+  position: absolute;
+  top: 286px;
+  left: 74px;
+  width: 940px;
+  height: 170px;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  &__item {
+    padding-left: 36px;
+    height: 45px;
+    width: 405px;
+    margin-bottom: 11px;
+  }
+  &__button {
+    position: relative;
+    margin-left: 37px;
+    margin-top: 12px;
+    width: 140px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-area {
+      position: absolute;
+      width: 100%;
+    }
+    &-text {
+      font-family: @regular;
+      color: #098389;
+      margin-top: -5px;
+    }
+  }
+}
+.label {
+  position: relative;
+  &-text {
+    position: absolute;
+    left: 41px;
+    top: 18px;
+    width: 340px;
+    font-family: @regular;
+    color: @baseColor;
+    font-size: 20px;
+  }
+}
+.checkbox {
+  display: none;
+  &-custom:before {
+    content: url("../../img/ast-edt-2018-2-respi-pulmonolog_usage/checkbox.png");
+    display: table;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+  &:checked + .checkbox-custom:before {
+    content: url("../../img/ast-edt-2018-2-respi-pulmonolog_usage/checkbox-chosen.png");
+    display: table;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+
+}
+.button {
+  position: absolute;
+  top: 518px;
+  left: 314px;
+  width: 372px;
+  height: 116px;
+  background: url("../../img/ast-edt-2018-2-respi-pulmonolog_usage/button.png");
+  background-size: contain;
+}
+.popup {
+  position: absolute;
+  top: 231px;
+  left: 0;
+  width: 100%;
+  height: 539px;
+  background: #fff;
+
+  opacity: 0;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.table {
+  position: absolute;
+  top: 34px;
+  left: 89px;
+  width: 873px;
+  height: 465px;
+  font-family: @regular;
+  color: @baseColor;
+  &__header, &__col {
+    display: flex;
+    box-sizing: border-box;
+  }
+  &__col {
+    padding: 14px 0;
+
+    &:nth-child(2n + 1) {
+      background: #DFF2FD;
+    }
+  }
+
+  &__row {
+    box-sizing: border-box;
+
+    &--1 {
+      width: 180px;
+      padding-left: 31px;
+    }
+    &--2 {
+      width: 220px;
+    }
+    &--3 {
+      width: 249px;
+    }
+    &--4 {
+      width: 108px;
+    }
+    &--5 {
+      width: 100px;
+    }
+
+  }
+  &__header {
+    background: -webkit-linear-gradient(left, #3d7880 0%,#4eb0ad 65%);
+    padding: 18px 0;
+    color: #fff;
+  }
+}
+.back {
+  position: absolute;
+  top: 21px;
+  left: 13px;
+  width: 75px;
+  height: 75px;
+  background: url("../../img/ast-edt-2018-2-respi-pulmonolog_usage/back.png");
+  background-size: cover;
+}
+.footer {
+  position: absolute;
+  top: 656px;
+  left: 26px;
+  width: ~'calc(100% - 26px)';
+  height: 114px;
+  box-sizing: border-box;
+
+  &__links {
+    position: absolute;
+    top: 72px;
+    left: 45px;
+    width: 850px;
+    font-size: 9px;
+    font-family: @regular;
+    font-style: italic;
+    overflow: visible;
+
+    opacity: 0;
+    transition: .3s;
+    &.active {
+      opacity: 1;
+    }
+    ol, li {
+      overflow: visible;
+    }
+  }
+  &__link-button {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 62px;
+    height: 21px;
+    z-index: 1;
+  }
+  &__logo {
+    position: absolute;
+    top: 60px;
+    left: 879px;
+    width: 93px;
+    height: 26px;
+  }
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

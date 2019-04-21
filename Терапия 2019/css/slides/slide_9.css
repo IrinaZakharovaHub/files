@@ -1,0 +1,38 @@
+
+.slide {
+    background: url(../../images/slide_9/slide_9.png) no-repeat 0 0 / cover;
+}
+
+.btn {
+    position: absolute;
+    width: 122px;
+    height: 122px;
+    z-index: 10;
+    opacity: 1;
+}
+
+.btn--1 {
+    top: 193px;
+    left: 151px;
+}
+
+.btn--2 {
+    top: 193px;
+    left: 290px;
+}
+.btn--3 {
+    top: 193px;
+    left: 442px;
+}
+.btn--4 {
+    top: 193px;
+    left: 600px;
+}
+.btn--5 {
+    top: 193px;
+    left: 738px;
+}
+.btn--6 {
+    top: 193px;
+    left: 890px;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+	<style>
+		svg:hover #fone {
+		fill: #0a507f;
+		}
+	</style>
+<path id="fone" fill="#0B68B1" d="M25,50L25,50c13.8,0,25-11.2,25-25v0C50,11.2,38.8,0,25,0h0C11.2,0,0,11.2,0,25v0C0,38.8,11.2,50,25,50z"/>
+<path id="facebook_3_" fill="#FFFFFF" d="M27.4,40.9V27H32l0.7-5.4h-5.3v-3.4c0-1.6,0.4-2.6,2.7-2.6l2.9,0v-4.8
+	c-0.5-0.1-2.2-0.2-4.2-0.2c-4.1,0-6.9,2.5-6.9,7.1v4h-4.7V27h4.7v13.9H27.4z"/>
+</svg>

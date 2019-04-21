@@ -1,0 +1,223 @@
+<!--
+
+ОБЪЕКТЫ, СОБЫТИЯ, МЕТОДЫ, ОРГАНИЗАЦИЯ КОДА
+__________________________________________________________
+
+-todo: объекты и их конструкторы
+Основные объекты
+Специальные объекты JavaScript
+ new Img();
+ new Promise();
+
+-todo: события и методы событий в JavaScript
+https://www.w3schools.com/jsref/dom_obj_event.asp
+
+МЕТОДЫ DRAG & DROP
+
+todo:
+
+ИСПОЛЬЗУЕМЫЕ МЕТОДЫ (ФУНКЦИИ) ДЛЯ ОРГАНИЗАЦИИ JAVASCRIPT КОДА
+
+-todo: call, apply
+https://getinstance.info/articles/javascript/call-apply-and-bind-functions/
+https://learn.javascript.ru/call-apply
+func.call(obj) -> Выбор разных функций и объектов из списка (добавление функций к объектам, возможность добавления произвольных аргуменов)
+Результат: рез-т выполнения функции + код функции
+Добавить примеры - использование методов других объетов
+
+
+-todo: bind
+https://getinstance.info/articles/javascript/call-apply-and-bind-functions/
+Добавить примеры - привязка контекста с помощью bind
+
+
+-todo: try/catch
+https://itchief.ru/lessons/javascript/107-javascript-exception-handling
+
+-todo: http://xmlhttprequest.ru/
+
+
+
+ОРГАНИЗАЦИЯ КОДА
+
+- todo: callback
+https://habr.com/post/151716/
+Добавить примеры - использование callback
+Добавить примеры - использование callback + Apply
+Callbacks Jquery - http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82_callbacks
+
+- todo: chaining
+http://forwebdev.ru/javascript/chaining/
+http://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/
+
+
+- todo: функциональное наследование: функции-конструкторы
+Вызов собственного свойства/метода конструктора
+Установка свойств функции-конструктора из аргументов
+Вызов конструктора в конструкторе
+Вызов метода конструктора в конструкторе + контроллер
+
+
+-todo: прототипное наследование, прототипы и конструкторы
+Запись метода в прототип класса
+Запись объекта и его прототипа как прототип другого объекта
+Вызов метода прототипа конструктора в конструкторе + контроллер
+
+
+-todo: new Promise - промисы и цепочки then
+https://getinstance.info/articles/javascript/grokking-es6-promises-the-four-functions-you-need-to-avoid-callback-hel/
+http://blog.liveedu.tv/javascript-promises/
+
+
+-->
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .face {
+        display: flex;
+        height: 100%;
+    }
+    .face__movable-block {
+        width: 70%;
+        min-width: 320px;
+        overflow-y: scroll;
+    }
+    .face__code-block {
+        width: 30%;
+        background: #2d2d2d;
+        height: 100%;
+    }
+    .drag-drop-block {
+        display: flex;
+    }
+    .drag-drop-block__zone {
+
+    }
+    .object-block {
+        margin: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        width: 30%;
+        height: 300px;
+        align-items: center;
+        background: #fff9a0;
+        box-sizing: border-box;
+    }
+    .object-block__code {
+        width: 100%;
+        background: #ffe775;
+        margin-bottom: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .function-block {
+        width: 90%;
+        height: 80px;
+        background: #8bcd84;
+        margin: 5px 0;
+    }
+    .pointer {
+        opacity: .5;
+    }
+    .dashed {
+        border: 2px dashed #8bcd84;
+    }
+    code {
+        white-space: pre;
+    }
+
+</style>
+<body>
+<div class="face">
+    <div class="face__movable-block">
+        <div class="description">
+f
+        </div>
+        <div class="drag-drop-block">
+            <div class="drag-drop-block__zone object-block dashed">
+                <div class="object-block__code">
+                    <code>let car = {
+    color: 'red';
+ }</code>
+                </div>
+                <div id="function1" class="function-block" draggable="true">
+                    <code>function one(arg) {
+ console.log(this.color);
+ }</code>
+                </div>
+                <div id="function2" class="function-block" draggable="true"></div>
+            </div>
+
+            <div class="drag-drop-block__zone object-block">
+                <div class="object-block__code"><code>let plane = {
+     color: 'yellow';
+  }</code>
+            </div></div>
+            <div class="drag-drop-block__zone object-block">
+                <div class="object-block__code">
+                    <code>let bus = {
+     color: 'blue';
+  }</code>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="face__code-block"></div>
+</div>
+
+<script>
+    var blocks = document.querySelectorAll('.function-block');
+    var zones = document.querySelectorAll('.drag-drop-block__zone');
+
+    [].forEach.call(zones, function(e) {
+        e.addEventListener('dragenter', dragenter, false);
+        e.addEventListener('dragover', dragover, false);
+        e.addEventListener('dragleave', dragleave, false);
+        e.addEventListener('drop', drop, false);
+    });
+
+    [].forEach.call(blocks, function(e) {
+        e.addEventListener('dragstart', dragstart, false);
+    });
+    function dragstart(e) {
+        e.dataTransfer.setData("text", e.target.id); // Сохраняем ID в DataTransfer
+        console.log(e.dataTransfer);
+        this.classList.add('pointer');
+    }
+    function dragenter(e) {
+        this.classList.add('dashed');
+    }
+    function dragleave(e) {
+        this.classList.remove('dashed');
+    }
+
+    function dragover(e) {
+        e.preventDefault();
+    }
+
+    function drop(e) {
+        var elementID = e.dataTransfer.getData('text');
+        var element = document.getElementById(elementID);
+        if (e.target.classList.contains('object-block__code')) return false;
+        e.target.appendChild(element);
+        element.classList.remove('pointer');
+    }
+
+</script>
+</body>
+</html>
