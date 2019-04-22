@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Geometria';
+    src: url('Geometria.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria-Bold';
+    src: url('Geometria-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

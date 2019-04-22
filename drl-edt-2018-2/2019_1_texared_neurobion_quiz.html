@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Викторина</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/2019_1_texared_neurobion_quiz.css">
+</head>
+<body>
+<div class="slide">
+    <div class="results">
+        <div class="results__result js-result-1"></div>
+        <div class="results__result js-result-2"></div>
+        <div class="results__result js-result-3"></div>
+        <div class="results__result js-result-4"></div>
+        <div class="results__result js-result-5"></div>
+        <div class="results__result js-result-6"></div>
+    </div>
+
+    <div id="app">
+        <div id="welcome" class="screen screen--welcome">
+            <div class="title">
+                <div>
+                    <div class="title__bold">
+                        Тексаред<br>
+                        <span class="title__bold--small">+</span><br>
+                        Нейробион
+                    </div>
+                    <div class="title__regular">
+                        Тест <span class="center">·</span> 6 вопросов
+                    </div>
+                    <span class="abs-center">·</span>
+                </div>
+            </div>
+            <div class="js-start button">
+                <div class="button__area">
+                    Начать тест
+                </div>
+            </div>
+        </div>
+        <div id="questions" class="screen--questions">
+            <div id="question1" class="screen screen--question screen--question--1">
+                <div class="screen__header">
+                    <div class="question--number">Вопрос 1</div>
+                    <div class="question--text">
+                        Какие витамины<br>
+                        содержит препарат Нейробион<br>
+                        в таблетках?
+                    </div>
+                    <div class="question--tip">
+                        Выберите несколько
+                    </div>
+                </div>
+                <div class="screen__content">
+                    <div class="answers" data-screen="screen--question--1">
+                        <div class="js-answer-on-quest-1 answers__answer right-answer" data-answer="B1"><p>B1 (100
+                            мг)</p></div>
+                        <div class="js-answer-on-quest-1 answers__answer right-answer" data-answer="B6"><p>B6 (200
+                            мг)</p></div>
+                        <div class="js-answer-on-quest-1 answers__answer false-answer" data-answer="B5"><p>B5 (100
+                            мг)</p></div>
+                        <div class="js-answer-on-quest-1 answers__answer right-answer" data-answer="B12"><p>B12 (200
+                            мг)</p></div>
+                        <div class="js-answer-on-quest-1 answers__answer false-answer" data-answer="B2"><p>B2 (200
+                            мг)</p></div>
+                    </div>
+                    <button class="js-answer answers__button" data-next-screen="2">Ответить</button>
+                    <div class="answers__result">
+                        <img class="correct" src="images/correct.png" alt="">
+                        <img class="wrong" src="images/almost-correct.png" alt="">
+                    </div>
+                </div>
+                <div class="img-instruments img-nails"></div>
+            </div>
+            <div class="screen screen--question screen--question--2">
+
+                <div class="screen__header">
+                    <div class="question--number">Вопрос 2</div>
+                    <div class="question--text">
+                        Укажите действующее<br>
+                        вещество препарата<br>
+                        Тексаред.
+                    </div>
+                    <!--<div class="question&#45;&#45;tip">-->
+                    <!--Выберите несколько-->
+                    <!--</div>-->
+                </div>
+                <div class="screen__content">
+                    <div class="answers" data-screen="screen--question--2">
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="meloksikam"><p>
+                            Мелоксикам</p></div>
+                        <div class="js-answer-on-quest answers__answer right-answer" data-answer="tenoksikam"><p>
+                            Теноксикам</p></div>
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="ketoprofen"><p>
+                            Кетопрофен</p></div>
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="diklofenak"><p>
+                            Диклофенак</p></div>
+                    </div>
+                    <button class="js-answer answers__button" data-next-screen="3">Ответить</button>
+                    <div class="answers__result">
+                        <img class="correct" src="images/correct.png" alt="">
+                        <img class="wrong" src="images/almost-correct.png" alt="">
+                    </div>
+                </div>
+                <div class="img-instruments img-mongenstern"></div>
+                <div class="blur-wrapper blur-wrapper--2 active"></div>
+            </div>
+            <div class="screen screen--question screen--question--3">
+
+                <div class="screen__header">
+                    <div class="question--number">Вопрос 3</div>
+                    <div class="question--text">
+                        В скольких странах<br>
+                        применяется препарат<br>
+                        Нейробион?
+                    </div>
+                    <!--<div class="question&#45;&#45;tip">-->
+                    <!--Выберите несколько-->
+                    <!--</div>-->
+                </div>
+                <div class="screen__content">
+                    <div class="answers" data-screen="screen--question--3">
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="30"><p>30</p>
+                        </div>
+                        <div class="js-answer-on-quest answers__answer right-answer" data-answer="75"><p>75</p>
+                        </div>
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="11"><p>11</p>
+                        </div>
+                    </div>
+                    <button class="js-answer answers__button" data-next-screen="4">Ответить</button>
+                    <div class="answers__result">
+                        <img class="correct" src="images/correct.png" alt="">
+                        <img class="wrong" src="images/almost-correct.png" alt="">
+                    </div>
+                </div>
+                <div class="img-instruments img-collar"></div>
+                <div class="blur-wrapper blur-wrapper--3 active"></div>
+
+            </div>
+            <div class="screen screen--question screen--question--4">
+                <div class="screen__header">
+                    <div class="question--number">Вопрос 4</div>
+                    <div class="question--text">
+                        Сколько раз в сутки<br>
+                        применяется препарат<br>
+                        Тексаред (инъекционная<br>
+                        и таблетированная формы)?
+                    </div>
+                    <!--<div class="question&#45;&#45;tip">-->
+                    <!--Выберите несколько-->
+                    <!--</div>-->
+                </div>
+                <div class="screen__content">
+                    <div class="answers" data-screen="screen--question--4">
+                        <div class="js-answer-on-quest answers__answer right-answer" data-answer="1"><p>1 раз</p>
+                        </div>
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="4"><p>до 4 раз</p>
+                        </div>
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="2"><p>2 раза</p>
+                        </div>
+                    </div>
+                    <div class="js-answer answers__button" data-next-screen="5">Ответить</div>
+                    <div class="answers__result">
+                        <img class="correct" src="images/correct.png" alt="">
+                        <img class="wrong" src="images/almost-correct.png" alt="">
+                    </div>
+                </div>
+                <button class="img-instruments img-pitchfork"></button>
+                <div class="blur-wrapper blur-wrapper--4 active"></div>
+            </div>
+            <div class="screen screen--question screen--question--5">
+                <div class="screen__header">
+                    <div class="question--number">Вопрос 5</div>
+                    <div class="question--text">
+                        Содержит ли инъекционная<br>
+                        форма препарата Нейробион<br>
+                        лидокаин?
+                    </div>
+                    <!--<div class="question&#45;&#45;tip">-->
+                    <!--Выберите несколько-->
+                    <!--</div>-->
+                </div>
+                <div class="screen__content">
+                    <div class="answers" data-screen="screen--question--5">
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="yes"><p>Да</p>
+                        </div>
+                        <div class="js-answer-on-quest answers__answer right-answer" data-answer="no"><p>Нет</p>
+                        </div>
+                    </div>
+                    <div class="js-answer answers__button" data-next-screen="6">Ответить</div>
+                    <div class="answers__result">
+                        <img class="correct" src="images/correct.png" alt="">
+                        <img class="wrong" src="images/almost-correct.png" alt="">
+                    </div>
+                </div>
+                <div class="img-instruments img-shackle"></div>
+                <div class="blur-wrapper blur-wrapper--5 active"></div>
+            </div>
+            <div class="screen screen--question screen--question--6">
+                <div class="screen__header">
+                    <div class="question--number">Вопрос 6</div>
+                    <div class="question--text">
+                        Через какое время отмечается<br>
+                        максимальная концентрация<br>
+                        теноксикама в крови для<br>
+                        инъекционной формы<br>
+                        препарата Тексаред?
+                    </div>
+                    <!--<div class="question&#45;&#45;tip">-->
+                    <!--Выберите несколько-->
+                    <!--</div>-->
+                </div>
+                <div class="screen__content">
+                    <div class="answers" data-screen="screen--question--6">
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="24"><p>24
+                            минуты</p></div>
+                        <div class="js-answer-on-quest answers__answer false-answer" data-answer="1"><p>1 час</p>
+                        </div>
+                        <div class="js-answer-on-quest answers__answer right-answer" data-answer="15"><p>15
+                            минут</p></div>
+                    </div>
+                    <div class="js-answer answers__button" data-next-screen="7">Ответить</div>
+                    <div class="answers__result">
+                        <img class="correct" src="images/correct.png" alt="">
+                        <img class="wrong" src="images/almost-correct.png" alt="">
+                    </div>
+                    <div class="img-instruments img-trap"></div>
+                    <div class="blur-wrapper blur-wrapper--6 active"></div>
+                </div>
+            </div>
+            <div class="no-questions">
+                Вопросов<br>
+                больше<br>
+                нет
+            </div>
+        </div>
+    </div>
+    <div class="screen screen--results">
+        <!--<img src="images/finish/final.jpg" alt="" class="final">-->
+        <img src="images/finish/statue.webp" alt="" class="statue">
+        <img src="images/finish/wave.png" alt="" class="waves">
+        <img src="images/finish/arm.png" alt="" class="arm">
+        <img src="images/finish/pain.png" alt="" class="pain">
+        <img src="images/finish/raster.png" alt="" class="raster">
+        <div class="total__wrapper">
+            <div class="total-results">
+                <div class="js-result total-results__total"></div>
+                <div class="js-total-content total-results__content">
+
+                </div>
+                <div class="js-repeat total-results__repeat">
+                    Нажмите, чтобы пройти снова
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/communicate.js"></script>
+<script src="js/slideAppLib.js"></script>
+<script src="js/hammer.min.js"></script>
+<script src="js/slides/repeatingFill.js"></script>
+<script src="js/slides/fillRightData.js"></script>
+<script src="js/slides/2019_1_texared_neurobion_quiz.js"></script>
+
+</body>
+</html>

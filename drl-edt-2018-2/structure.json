@@ -1,0 +1,84 @@
+{
+  "settings": {
+    "slideFlip": {
+      "animationSpeed": 0,
+      "gestures": [
+        "swipe"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Викторина",
+      "slides": [
+        {
+          "alias": "2019_1_texared_neurobion_quiz",
+          "name": "2019_1_texared_neurobion_quiz",
+          "source": "2019_1_texared_neurobion_quiz.html",
+          "preview": "previews/2019_1_texared_neurobion_quiz.png",
+          "attachments": [],
+          "timeSplit": [
+            {
+              "brand": "Тексаред",
+              "split": 1
+            },
+            {
+              "brand": "Нейробион",
+              "split": 1
+            }
+          ],
+          "questionaries": [
+            {
+              "alias": "question1",
+              "name": "Вопрос 1"
+            },
+            {
+              "alias": "question2",
+              "name": "Вопрос 2"
+            },
+            {
+              "alias": "question3",
+              "name": "Вопрос 3"
+            },
+            {
+              "alias": "question4",
+              "name": "Вопрос 4"
+            },
+            {
+              "alias": "question5",
+              "name": "Вопрос 5"
+            },
+            {
+              "alias": "question6",
+              "name": "Вопрос 6"
+            },
+            {
+              "alias": "question1_correct",
+              "name": "Вопрос 1 - верный ответ"
+            },
+            {
+              "alias": "question2_correct",
+              "name": "Вопрос 2 - верный ответ"
+            },
+            {
+              "alias": "question3_correct",
+              "name": "Вопрос 3 - верный ответ"
+            },
+            {
+              "alias": "question4_correct",
+              "name": "Вопрос 4 - верный ответ"
+            },
+            {
+              "alias": "question5_correct",
+              "name": "Вопрос 5 - верный ответ"
+            },
+            {
+              "alias": "question6_correct",
+              "name": "Вопрос 6 - верный ответ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
