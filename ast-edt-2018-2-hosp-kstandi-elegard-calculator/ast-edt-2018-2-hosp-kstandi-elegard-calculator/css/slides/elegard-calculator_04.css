@@ -1,0 +1,69 @@
+body {
+    color: #334D5E;
+    font-family: 'RobotoBold', sans-serif;
+}
+.backround {
+    width: 1024px;
+    height: 768px;
+    background: url('../../images/elegard-calculator_04/back.png');
+    background-size: cover;
+}
+.table {
+    position: absolute;
+    top: 232px;
+    left: 368px;
+    width: 940px;
+    height: 206px;
+
+    display: flex;
+}
+.col {
+    height: 100%;
+}
+.col--1 {
+    width: 115px;
+}
+.col--2 {
+    width: 113px;
+}
+.col--3 {
+    width: 102px;
+}
+.col--4 {
+    width: 99px;
+}
+.col--5 {
+    width: 88px;
+}
+.col--6 {
+    width: 97px;
+}
+.data {
+    padding: 17px 0;
+    text-align: center;
+}
+.total {
+    position: absolute;
+    width: 294px;
+    font-size: 22px;
+}
+.summ {
+    top: 448px;
+    left: 63px;
+}
+.total__sign {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+.total__fig {
+    padding-top: 10px;
+}
+.return {
+    top: 447px;
+    left: 385px;
+}
+.balance {
+    top: 448px;
+    left: 720px;
+}

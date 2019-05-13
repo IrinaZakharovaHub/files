@@ -1,0 +1,61 @@
+{
+  "settings": {
+    "slideFlip": {
+      "animationSpeed": 0,
+      "gestures": [
+        "doubleswipe"
+      ]
+    }
+  },
+  "slides": [
+    {
+      "alias": "Kstandi-elegard-calculator",
+      "name": "Kstandi-elegard-calculator",
+      "source": "kstandi-elegard_01.html",
+      "preview": "previews/01.png",
+      "events": [
+        {
+          "name": "Kstandi-elegard-calculator2",
+          "alias": "tap1"
+        }
+      ]
+    },
+    {
+      "alias": "Kstandi-elegard-calculator2",
+      "name": "Kstandi-elegard-calculator2",
+      "source": "kstandi-elegard_02.html",
+      "preview": "previews/02.png"
+    },
+    {
+      "alias": "Kstandi-elegard-calculator3",
+      "name": "Kstandi-elegard-calculator3",
+      "source": "kstandi-elegard_03.html",
+      "preview": "previews/03.png"
+    },
+    {
+      "alias": "Kstandi-elegard-calculator4",
+      "name": "Kstandi-elegard-calculator4",
+      "source": "kstandi-elegard_04.html",
+      "preview": "previews/04.png"
+    }
+  ],
+  "branches": [
+    {
+      "name": "Основной раздел",
+      "alias": "osnovnoy-razdel",
+      "slides": [
+        "Kstandi-elegard-calculator",
+        "Kstandi-elegard-calculator2",
+        "Kstandi-elegard-calculator3",
+        "Kstandi-elegard-calculator4"
+      ]
+    }
+  ],
+  "handlers": {
+    "Kstandi-elegard-calculator@osnovnoy-razdel tap1": {
+      "action": "navigate",
+      "destination": "Kstandi-elegard-calculator2@osnovnoy-razdel",
+      "appearFrom": "left"
+    }
+  }
+}

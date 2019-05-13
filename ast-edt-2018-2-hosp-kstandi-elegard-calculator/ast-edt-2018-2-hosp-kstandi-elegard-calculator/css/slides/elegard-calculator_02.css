@@ -1,0 +1,6 @@
+.backround {
+    width: 1024px;
+    height: 768px;
+    background: url('../../images/elegard-calculator_02/back.png');
+    background-size: cover;
+}

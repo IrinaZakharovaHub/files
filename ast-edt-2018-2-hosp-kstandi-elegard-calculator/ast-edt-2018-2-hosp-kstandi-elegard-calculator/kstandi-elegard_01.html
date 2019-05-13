@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1024, maximum-scale=1,user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Slide - 1</title>
+  <!-- В случае необходимости подключаем шрифты -->
+  <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+  <!-- Файл для общих стилей -->
+  <link rel="stylesheet" type="text/css" href="css/elegard-calculator_common.css">
+  <!-- Стили для футера  (обязательные к подключению) -->
+  <!--<link rel="stylesheet" type="text/css" href="css/footer.css">-->
+  <!-- Ваши стили для слайда -->
+  <link rel="stylesheet" type="text/css" href="css/slides/elegard-calculator_01.css">
+
+  <!--todo: УДАЛИТЬ ПОСЛЕ РЕДАКТИРОВАНИЯ!-->
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script src="js/iscroll.js" type="text/javascript"></script>
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+
+</head>
+
+<body>
+<div class="container">
+
+  <!-- ЗДЕСЬ НАЧИНАЕТСЯ ВАШ HTML -->
+  <div class="slide">
+    <div class="header">
+
+      <div class="city js-city" id="city">
+        <input class="city__search search js-search" placeholder="Выберите регион" onclick="this.select()">
+        <!-- class="search" automagically makes an input a search field. -->
+
+        <div class="city__button"></div>
+        <div class="city__block" style="display: none" id="myscroll">
+          <div class="w-100">
+            <div class="opinions">
+              <div class="opinions__ops active" data-direct="resp">Республики</div>
+              <div class="opinions__ops" data-direct="edje">Края</div>
+              <div class="opinions__ops" data-direct="district">Области</div>
+              <div class="opinions__ops" data-direct="cities">Города федерального значения</div>
+              <div class="opinions__ops" data-direct="country">Автономные округа и область</div>
+              <div class="opinions__ops" data-direct="all">Все</div>
+            </div>
+            <ul class="city__list list city__region js-city-list city__region--resp" data-location="resp">
+              <li data-child-of="resp">
+                <!-- The innerHTML of children with class="name" becomes this items "name" value -->
+                <h3 class="name"
+                    data-count="15280.58"
+                    data-koeff1-7="1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Республика Адыгея</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="13072.09"
+                    data-koeff1-7="1.4"
+                    data-koeff1-22="1.4"
+                    data-koeff1-45="1.4"
+                    data-koeff1-ks="1.4"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Республика Башкортостан</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="11561.57"
+                    data-koeff1-7="1.35"
+                    data-koeff1-22="1.35"
+                    data-koeff1-45="1.35"
+                    data-koeff1-ks="1.35"
+                    data-koeff2-7="0.94"
+                    data-koeff2-22="0.94"
+                    data-koeff2-45="0.94"
+                    data-koeff2-ks="0.94"
+                >Республика Бурятия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="15575.04"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Республика Дагестан</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="14309.30"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Ингушетия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="11559.66"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Кабардино-Балкария</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="12205.99"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Калмыкия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="11871.77"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Карачаево-Черкессия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="17641.00"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Карелия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="11559.98"
+
+                    data-koeff1-7="1.7"
+                    data-koeff1-22="1.7"
+                    data-koeff1-45="1.7"
+                    data-koeff1-ks="1.7"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Коми</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="14070.00"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Крым</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="11559.68"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Марий Эл</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="12885.80"
+                    data-koeff1="1.3"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.3"
+                    data-koeff1-22="1.3"
+                    data-koeff1-45="1.3"
+                    data-koeff1-ks="1.3"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Мордовия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="18733.77"
+
+                    data-koeff1-7="1.02"
+                    data-koeff1-22="1.02"
+                    data-koeff1-45="1.02"
+                    data-koeff1-ks="1.02"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1.2"
+
+                >Республика Саха (Якутия)</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="13200.00"
+                    data-koeff1="1.4"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.4"
+                    data-koeff1-22="1.4"
+                    data-koeff1-45="1.4"
+                    data-koeff1-ks="1.4"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Татарстан</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="12109.27"
+
+                    data-koeff1-7="0.99"
+                    data-koeff1-22="0.99"
+                    data-koeff1-45="0.99"
+                    data-koeff1-ks="0.99"
+                    data-koeff2-7="1.74"
+                    data-koeff2-22="1.74"
+                    data-koeff2-45="1.74"
+                    data-koeff2-ks="1.74"
+
+                >Республика Тыва</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="12773.47"
+
+                    data-koeff1-7="1.15"
+                    data-koeff1-22="1.15"
+                    data-koeff1-45="1.15"
+                    data-koeff1-ks="1.15"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Удмуртия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="16487.85"
+
+                    data-koeff1-7="1.3"
+                    data-koeff1-22="1.3"
+                    data-koeff1-45="1.3"
+                    data-koeff1-ks="1.3"
+                    data-koeff2-7="1.39"
+                    data-koeff2-22="1.39"
+                    data-koeff2-45="1.39"
+                    data-koeff2-ks="1.39"
+
+                >Республика Хакасия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="14177.28"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Чечня</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="11631.09"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Чувашия</h3>
+              </li>
+              <li data-child-of="resp">
+                <h3 class="name"
+                    data-count="11779.32"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Республика Северная Осетия-Алания</h3>
+              </li>
+
+              <li data-child-of="edje">
+                <!-- The innerHTML of children with class="name" becomes this items "name" value -->
+                <h3 class="name"
+                    data-count="13275.00"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Алтайский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="20146.92"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Забайкальский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="11981.07"
+
+                    data-koeff1-7="2.55"
+                    data-koeff1-22="2.55"
+                    data-koeff1-45="2.55"
+                    data-koeff1-ks="2.55"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Камчатский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="13279.64"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Краснодарский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="11570.00"
+
+                    data-koeff1-7="1.35"
+                    data-koeff1-22="1.35"
+                    data-koeff1-45="1.35"
+                    data-koeff1-ks="1.35"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Красноярский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="11559.66"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="0.9"
+                    data-koeff2-22="0.9"
+                    data-koeff2-45="0.9"
+                    data-koeff2-ks="0.9"
+
+                >Пермский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="11567.79"
+
+                    data-koeff1-7="1.39"
+                    data-koeff1-22="1.39"
+                    data-koeff1-45="1.39"
+                    data-koeff1-ks="1.39"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Приморский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="11559.66"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Ставропольский край</h3>
+              </li>
+              <li data-child-of="edje">
+                <h3 class="name"
+                    data-count="13520.00"
+
+                    data-koeff1-7="1.4"
+                    data-koeff1-22="1.4"
+                    data-koeff1-45="1.4"
+                    data-koeff1-ks="1.4"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Хабаровский край</h3>
+              </li>
+
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11605.00"
+
+                    data-koeff1-7="1.4"
+                    data-koeff1-22="1.4"
+                    data-koeff1-45="1.4"
+                    data-koeff1-ks="1.4"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Амурская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="9402.59"
+
+                    data-koeff1-7="1.56"
+                    data-koeff1-22="1.56"
+                    data-koeff1-45="1.56"
+                    data-koeff1-ks="1.56"
+                    data-koeff2-7="1.18"
+                    data-koeff2-22="1.18"
+                    data-koeff2-45="1.18"
+                    data-koeff2-ks="1.18"
+
+                >Архангельская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12919.81"
+
+                    data-koeff1-7="1.28"
+                    data-koeff1-22="1.28"
+                    data-koeff1-45="1.28"
+                    data-koeff1-ks="1.28"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Астраханская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12178.85"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Белгородская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11559.70"
+
+                    data-koeff1-7="0.9"
+                    data-koeff1-22="0.9"
+                    data-koeff1-45="0.9"
+                    data-koeff1-ks="0.9"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Брянская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11560.00"
+
+                    data-koeff1-7="0.9"
+                    data-koeff1-22="0.9"
+                    data-koeff1-45="0.9"
+                    data-koeff1-ks="0.9"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Владимирская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11560.00"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Волгоградская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="13050.27"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Вологодская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11836.90"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+
+                >Воронежская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11560.00"
+                    data-koeff1="0.9"
+                    data-koeff2="1.1"
+
+                    data-koeff1-7="0.9"
+                    data-koeff1-22="0.9"
+                    data-koeff1-45="0.9"
+                    data-koeff1-ks="0.9"
+                    data-koeff2-7="1.1"
+                    data-koeff2-22="1.1"
+                    data-koeff2-45="1.1"
+                    data-koeff2-ks="1.1"
+
+                >Ивановская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12226.50"
+
+                    data-koeff1-7="1.28"
+                    data-koeff1-22="1.28"
+                    data-koeff1-45="1.28"
+                    data-koeff1-ks="1.28"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Иркутская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12522.97"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Калининградская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11940.45"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Калужская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11559.50"
+
+                    data-koeff1-7="1.21"
+                    data-koeff1-22="1.21"
+                    data-koeff1-45="1.21"
+                    data-koeff1-ks="1.21"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Кемеровская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11559.66"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1.08"
+                    data-koeff2-22="1.08"
+                    data-koeff2-45="1.08"
+                    data-koeff2-ks="1.08"
+
+                >Кировская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11559.66"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Костромская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12774.63"
+
+                    data-koeff1-7="1.19"
+                    data-koeff1-22="1.19"
+                    data-koeff1-45="1.19"
+                    data-koeff1-ks="1.19"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Курганская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11865.07"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Курская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="13435.03"
+                    data-koeff1="1.3"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.3"
+                    data-koeff1-22="1.3"
+                    data-koeff1-45="1.3"
+                    data-koeff1-ks="1.3"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Ленинградская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="14624.27"
+                    data-koeff1="1.1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Липецкая область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11972.31"
+                    data-koeff1="3.102"
+                    data-koeff2="1.1"
+
+                    data-koeff1-7="3.1"
+                    data-koeff1-22="3.1"
+                    data-koeff1-45="3.1"
+                    data-koeff1-ks="3.1"
+                    data-koeff2-7="1.1"
+                    data-koeff2-22="1.1"
+                    data-koeff2-45="1.1"
+                    data-koeff2-ks="1.1"
+
+                >Магаданская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11626.40"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Московская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="22275.00"
+                    data-koeff1="1.19"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.19"
+                    data-koeff1-22="1.19"
+                    data-koeff1-45="1.19"
+                    data-koeff1-ks="1.19"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Мурманская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11651.82"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Нижегородская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11652.00"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Новгородская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="13178.00"
+                    data-koeff1="1.4"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.4"
+                    data-koeff1-22="1.4"
+                    data-koeff1-45="1.4"
+                    data-koeff1-ks="1.4"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Новосибирская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12774.19"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Омская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12774.00"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Оренбургская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11702.75"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Орловская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12128.86"
+                    data-koeff1="1.0065702"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.01"
+                    data-koeff1-22="1.01"
+                    data-koeff1-45="1.01"
+                    data-koeff1-ks="1.01"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Пензенская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11800.00"
+                    data-koeff1="1.2"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.2"
+                    data-koeff1-22="1.2"
+                    data-koeff1-45="1.2"
+                    data-koeff1-ks="1.2"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Псковская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11647.00"
+                    data-koeff1="1.3"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.3"
+                    data-koeff1-22="1.3"
+                    data-koeff1-45="1.3"
+                    data-koeff1-ks="1.3"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Ростовская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11579.27"
+                    data-koeff1="1.45"
+                    data-koeff2="1.3985"
+
+                    data-koeff1-7="1.45"
+                    data-koeff1-22="1.45"
+                    data-koeff1-45="1.45"
+                    data-koeff1-ks="1.45"
+                    data-koeff2-7="1.4"
+                    data-koeff2-22="1.4"
+                    data-koeff2-45="1.4"
+                    data-koeff2-ks="1.4"
+                >Рязанская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11559.70"
+                    data-koeff1="1.33"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.33"
+                    data-koeff1-22="1.33"
+                    data-koeff1-45="1.33"
+                    data-koeff1-ks="1.33"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Самарская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12780.50"
+                    data-koeff1="1.1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Саратовская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="19589.00"
+                    data-koeff1="1.845"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.84"
+                    data-koeff1-22="1.84"
+                    data-koeff1-45="1.84"
+                    data-koeff1-ks="1.84"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Сахалинская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="8795.50"
+                    data-koeff1="1.105"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Свердловская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11559.70"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Смоленская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="10493.53"
+                    data-koeff1="1.4"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.4"
+                    data-koeff1-22="1.4"
+                    data-koeff1-45="1.4"
+                    data-koeff1-ks="1.4"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Тамбовская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11991.00"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Тверская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11559.70"
+                    data-koeff1="1.281"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.28"
+                    data-koeff1-22="1.28"
+                    data-koeff1-45="1.28"
+                    data-koeff1-ks="1.28"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Томская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11560.00"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Тульская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="10266.45"
+                    data-koeff1="1.105"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+                >Тюменская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12140.00"
+                    data-koeff1="1.101"
+                    data-koeff2="1.4"
+
+                    data-koeff1-7="1.1"
+                    data-koeff1-22="1.1"
+                    data-koeff1-45="1.1"
+                    data-koeff1-ks="1.1"
+                    data-koeff2-7="1.4"
+                    data-koeff2-22="1.4"
+                    data-koeff2-45="1.4"
+                    data-koeff2-ks="1.4"
+
+                >Ульяновская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="12000.00"
+                    data-koeff1="1.2"
+                    data-koeff2="1.105"
+
+                    data-koeff1-7="1.2"
+                    data-koeff1-22="1.2"
+                    data-koeff1-45="1.2"
+                    data-koeff1-ks="1.2"
+                    data-koeff2-7="1.1"
+                    data-koeff2-22="1.1"
+                    data-koeff2-45="1.1"
+                    data-koeff2-ks="1.1"
+
+                >Челябинская область</h3>
+              </li>
+              <li data-child-of="district">
+                <h3 class="name"
+                    data-count="11560.00"
+                    data-koeff1="1.11"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.11"
+                    data-koeff1-22="1.11"
+                    data-koeff1-45="1.11"
+                    data-koeff1-ks="1.11"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Ярославская область</h3>
+              </li>
+
+              <li data-child-of="cities">
+                <!-- The innerHTML of children with class="name" becomes this items "name" value -->
+                <h3 class="name"
+                    data-count="14613.72"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Санкт-Петербург</h3>
+              </li>
+              <li data-child-of="cities">
+                <h3 class="name"
+                    data-count="15405.85"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Севастополь</h3>
+              </li>
+
+              <li data-child-of="country">
+                <!-- The innerHTML of children with class="name" becomes this items "name" value -->
+                <h3 class="name"
+                    data-count="16176.96"
+                    data-koeff1="1.3"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1.3"
+                    data-koeff1-22="1.3"
+                    data-koeff1-45="1.3"
+                    data-koeff1-ks="1.3"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Еврейская автономная область</h3>
+              </li>
+              <li data-child-of="country">
+                <h3 class="name"
+                    data-count="21134.02"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Ханты-Мансийский автономный округ</h3>
+              </li>
+              <li data-child-of="country">
+                <h3 class="name"
+                    data-count="36646.00"
+                    data-koeff1="1"
+                    data-koeff2="1"
+
+                    data-koeff1-7="1"
+                    data-koeff1-22="1"
+                    data-koeff1-45="1"
+                    data-koeff1-ks="1"
+                    data-koeff2-7="1"
+                    data-koeff2-22="1"
+                    data-koeff2-45="1"
+                    data-koeff2-ks="1"
+
+                >Ямало-Ненецкий автономный округ</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Child elements of container with class="list" becomes list items -->
+
+
+      </div>
+      <div class="rate">
+        <span class="rate__text">Базовая ставка, руб.</span>
+        <div class="rate__count js-rate__count bold"></div>
+        <div class="rate__manual-count js-rate__manual-count" style="display: none"><span>|</span></div>
+        <img class="rate__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="display: none">
+        <span class="rate__error"></span>
+      </div>
+      <div class="eligard7">
+        <div class="koeff1" data-koeff="koeff1"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="eligard7"><span>|</span></div>
+          <img class="koeff1__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+        <div class="koeff2" data-koeff="koeff2"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="eligard7"><span>|</span></div>
+          <img class="koeff2__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+      </div>
+      <div class="eligard22">
+        <div class="koeff1" data-koeff="koeff1"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="eligard22"><span>|</span></div>
+          <img class="koeff1__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+        <div class="koeff2" data-koeff="koeff2"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="eligard22"><span>|</span></div>
+          <img class="koeff2__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+      </div>
+      <div class="eligard45">
+        <div class="koeff1" data-koeff="koeff1"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="eligard45"><span>|</span></div>
+          <img class="koeff1__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+        <div class="koeff2" data-koeff="koeff2"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="eligard45"><span>|</span></div>
+          <img class="koeff2__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+      </div>
+      <div class="kstandi">
+        <div class="koeff1" data-koeff="koeff1"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="kstandi"><span>|</span></div>
+          <img class="koeff1__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+        <div class="koeff2" data-koeff="koeff2"><span class="js-koeff bold">1</span>
+          <div class="js-koeff__inp" style="display: none" data-el="kstandi"><span>|</span></div>
+          <img class="koeff2__pen" src="images/elegard-calculator_common/pen.svg" alt="pen" style="">
+        </div>
+      </div>
+
+      <div class="right-menu">
+        <!--<img class="right-menu__mail right-menu__img" src="images/elegard-calculator_common/mail-04.png" alt="graph">-->
+        <img class="right-menu_taxes right-menu__img" src="images/elegard-calculator_common/graph.svg" alt="graph">
+        <div class="right-menu__percent">%</div>
+      </div>
+    </div>
+
+
+    <div class="med">
+      <div class="med__line med__line--header">
+        <div class="med__line__col"></div>
+        <div class="med__line__col">Количество упаковок, шт.</div>
+        <div class="med__line__col">K1</div>
+        <div class="med__line__col">K2</div>
+        <div class="med__line__col w-400">Возврат из ФОМС <br>по законченным <br>случаям, руб.</div>
+      </div>
+      <div class="med__line med__line--preparation js-eligard m-t-0" data-koeff="1.2" data-med="eligard7">
+        <div class="med__line__col">Элигард<sup>&reg;</sup> 7,5 мг</div>
+        <div class="med__line__col ">
+          <div class="input-range">
+            <div class="tooltip"></div>
+            <!--<div class="patients-total js-butt js-input-total input-range__figures" data-med="eligard7"></div>-->
+            <input class="patients-total js-input-total js-value" data-med="eligard7" type="range" min="0" max="500"
+                   value="0" readonly/>
+            <button class="input-range__buttons input-range--minus js-input-range-minus">-</button>
+            <button class="input-range__buttons input-range--plus js-input-range-plus">+</button>
+            <div class="input-range__button-area--minus js-input-range-minus"></div>
+            <div class="input-range__button-area--plus js-input-range-plus"></div>
+          </div>
+        </div>
+        <div class="med__line__col">
+        </div>
+        <div class="med__line__col">
+        </div>
+
+        <div class="med__line__col bold large" id="eligard7"></div>
+      </div>
+      <div class="med__line med__line--preparation" data-med="eligard22">
+        <div class="med__line__col">Элигард<sup>&reg;</sup> 22,5 мг</div>
+        <div class="med__line__col">
+          <div class="input-range">
+            <div class="tooltip"></div>
+            <!--<div class="patients-total js-butt js-input-total input-range__figures" data-med="eligard22"></div>-->
+            <input class="patients-total js-input-total js-value" data-med="eligard22" type="range" min="0" max="500"
+                   value="0" readonly/>
+            <button class="input-range__buttons input-range--minus js-input-range-minus">-</button>
+            <button class="input-range__buttons input-range--plus js-input-range-plus">+</button>
+            <div class="input-range__button-area--minus js-input-range-minus"></div>
+            <div class="input-range__button-area--plus js-input-range-plus"></div>
+          </div>
+        </div>
+        <div class="med__line__col"></div>
+        <div class="med__line__col"></div>
+        <div class="med__line__col bold large" id="eligard22"></div>
+      </div>
+      <div class="med__line med__line--preparation" data-med="eligard45">
+        <div class="med__line__col">Элигард<sup>&reg;</sup> 45 мг</div>
+        <div class="med__line__col">
+          <div class="input-range">
+            <div class="tooltip"></div>
+            <!--<div class="patients-total js-butt js-input-total input-range__figures" data-med="eligard45"></div>-->
+            <input class="patients-total js-input-total js-value" data-med="eligard45" type="range" min="0" max="500"
+                   value="0" readonly/>
+            <button class="input-range__buttons input-range--minus ">-</button>
+            <button class="input-range__buttons input-range--plus ">+</button>
+            <div class="input-range__button-area--minus js-input-range-minus"></div>
+            <div class="input-range__button-area--plus js-input-range-plus"></div>
+          </div>
+        </div>
+        <div class="med__line__col"></div>
+        <div class="med__line__col"></div>
+        <div class="med__line__col bold large" id="eligard45"></div>
+      </div>
+      <div class="med__line med__line--preparation" data-med="kstandi">
+        <div class="med__line__col bold large">Кстанди<sup>&reg;</sup></div>
+        <div class="med__line__col">
+          <div class="input-range input-range--kstandi">
+            <div class="tooltip"></div>
+            <!--<div class="patients-total js-butt js-input-kstandi input-range__figures input-range__figures&#45;&#45;100 ui-kstandi" data-med="kstandi"></div>-->
+            <input class="patients-total js-kstandi js-value" data-med="kstandi" type="range" min="0" max="100"
+                   value="0" readonly/>
+            <button class="input-range__buttons input-range--minus js-input-range-minus">-</button>
+            <button class="input-range__buttons input-range--plus js-input-range-plus">+</button>
+            <div class="input-range__button-area--minus js-input-range-minus"></div>
+            <div class="input-range__button-area--plus js-input-range-plus"></div>
+          </div>
+        </div>
+        <div class="med__line__col"></div>
+        <div class="med__line__col"></div>
+        <div class="med__line__col bold large" id="kstandi"></div>
+      </div>
+    </div>
+    <div class="total">
+      <div class="total__summ ">Итоговая сумма затрат<br> на препараты, руб
+        <div class="js-total-summ bold x-large m-t-10"></div>
+      </div>
+      <div class="total__return">Итоговый возврат из ФОМС <br>по законченным случаям, руб
+        <div class="js-total-return bold x-large m-t-10"></div>
+      </div>
+      <div class="total__balance color-red">
+        Баланс денежных <br>средств, руб
+        <div class="js-total-balance bold x-large m-t-10"></div>
+      </div>
+
+    </div>
+    <div data-fire-event="tap1" class="send">
+      <img class="send__mail" src="images/elegard-calculator_common/mail.svg" alt="">
+      ОТПРАВИТЬ
+    </div>
+    <div class="cloud"></div>
+    <div class="op" style="display: none"></div>
+    <div class="alert" style="display: none">
+      <div class="block">Пожалуйста, выберите регион</div>
+    </div>
+    <div class="keyboard" style="display: none">
+      <div class="keyboard__buttons">0</div>
+      <div class="keyboard__buttons">1</div>
+      <div class="keyboard__buttons">2</div>
+      <div class="keyboard__buttons">3</div>
+      <div class="keyboard__buttons">4</div>
+      <div class="keyboard__buttons">5</div>
+      <div class="keyboard__buttons">6</div>
+      <div class="keyboard__buttons">7</div>
+      <div class="keyboard__buttons">8</div>
+      <div class="keyboard__buttons">9</div>
+      <div class="keyboard__buttons">.</div>
+      <div class="keyboard__button-clear js-keyboard__clear">
+        <
+      </div>
+      <button class="keyboard__confirm">ok</button>
+      <button class="keyboard__clear-all js-clear-all">очистить все</button>
+
+    </div>
+
+
+  </div>
+  <!-- ЗДЕСЬ ЗАКАНЧИВАЕТСЯ ВАШ HTML-->
+</div>
+
+<!-- Обязательные к подключению скрипты -->
+<script src="js/jquery-2.1.1.min.js?v=1463052525903"></script>
+<script src="js/communicate.js?v=1463052525841" type="text/javascript"></script>
+<script src="js/slideAppLib.js?v=1465463546861" type="text/javascript"></script>
+<script src="js/astellasFooter.js" type="text/javascript"></script>
+<script src="js/list.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!-- Подключение общих для слайдов скриптов -->
+<script src="js/kstandi-elegard_common.js?v=1465405758784" type="text/javascript"></script>
+
+<!-- Подключение скриптов для этого слайда, если необходимо -->
+<script src="js/slides/kstandi-elegard_01.js" type="text/javascript"></script>
+
+<script>
+    var myscroll= document.getElementById('myscroll');
+        var myScroll = new iScroll(myscroll, {
+            mouseWheel: true,
+            scrollbars: true
+        });
+
+</script>
+</body>
+
+</html>

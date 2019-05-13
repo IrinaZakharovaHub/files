@@ -1,0 +1,55 @@
+.backround {
+    width: 1024px;
+    height: 768px;
+    background: url('../../images/elegard-calculator_03/back.png');
+    background-size: cover;
+}
+.table {
+    position: absolute;
+    top: 458px;
+    left: 48px;
+    width: 927px;
+    height: 208px;
+    display: flex;
+    font-size: 15px;
+    color: #334D5E;
+}
+.col--1 {
+    height: 100%;
+    width: 220px;
+}
+.col--2 {
+    width: 167px;
+    height: 100%;
+}
+.col--4 {
+    width: 84px;
+}
+.col--5, .col--6 {
+    width: 78px;
+}
+.region, .base {
+    padding: 17px;
+    text-align: center;
+}
+.number, .kgs {
+    padding: 17px 27px;
+    text-align: center;
+}
+.koeff1, .koeff2 {
+    padding: 17px 27px;
+    text-align: center;
+}
+.koeff2 {
+    /*margin-left: 18px;*/
+}
+.summ {
+    margin-left: 20px;
+    padding: 17px;
+    width: 200px;
+    text-align: center;
+}
+
+.number {
+    padding: 17px 4px 17px 6px;
+}
