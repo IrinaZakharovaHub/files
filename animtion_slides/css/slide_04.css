@@ -1,0 +1,291 @@
+.head {
+	position: absolute;
+    width: 1140px;
+    left: 64px;
+    top: 50px;
+}
+.hand {
+	position: absolute;
+    width: 64px;
+    z-index: 9;
+}
+.hand--1 {
+	top: 422px;
+    left: 163px;
+    animation: pos 2s forwards;
+}
+.hand--2 {
+	top: 422px;
+    left: 1047px;
+    animation: pos2 2s forwards;
+}
+.ducks {
+	position: relative;
+    top: 200px;
+    left: 0;
+    width: 1280px;
+    height: 468px;
+    background: #fff;
+    overflow: hidden;
+}
+.duck {
+	width: 195px;
+	position: absolute;
+	transform-origin: top center;
+}
+.duck1 {
+    top: -20px;
+    left: 100px;
+    transition: .5s;
+}
+.duck2 {
+    top: -20px;
+    left: 320px;
+    transition: .5s;
+}
+.duck3 {
+    top: -20px;
+    left: 540px;
+    transition: .5s;
+}
+.duck4 {
+    top: -20px;
+    left: 760px;
+    transition: .5s;
+}
+.duck5 {
+    top: -20px;
+    left: 980px;
+    transition: .5s;
+}
+.duck.moving {
+	animation: .5s moving forwards;
+}
+.duck2.moving {
+	animation: .5s moving2 .1s forwards;
+}
+.duck3.moving {
+	animation: .5s moving3 .2s forwards;
+}
+.duck4.moving {
+	animation: .5s moving4 .3s forwards;
+}
+.duck5.moving {
+	animation: .9s moving5 .4s forwards;
+}
+
+@keyframes pos {
+	0% {
+		opacity: 0;
+	}
+    50% {
+        opacity: 1;
+        transform: translateX(-150px) translateY(-60px);
+    }
+    100% {
+    	opacity: 0;
+    	transform: translateX(-150px) translateY(-60px);
+        
+    }
+}
+@keyframes pos2 {
+	0% {
+		opacity: 0;
+	}
+    50% {
+        opacity: 1;
+        transform: translateX(150px) translateY(-100px);
+    }
+    100% {
+    	opacity: 0;
+    	transform: translateX(150px) translateY(-100px);
+        
+    }
+}
+
+@keyframes moving {
+	0% {
+		top: -20px;
+		left: 100px;
+	}
+	50% {
+		top: -20px;
+		left: 115px;
+		transform: rotate(-10deg);
+	}
+	100% {
+		top: -20px;
+		left: 100px;
+		transform: rotate(0deg);
+	}
+}
+@keyframes moving2 {
+	0% {
+		top: -20px;
+		/*left: 45px;*/
+	}
+	50% {
+		top: -25px;
+		left: 340px;
+		transform: rotate(-7deg);
+	}
+	100% {
+		top: -20px;
+		left: 320px;
+		transform: rotate(0deg);
+	}
+}
+@keyframes moving3 {
+	0% {
+		top: -20px;
+		/*left: 45px;*/
+	}
+	50% {
+		top: -25px;
+		left: 560px;
+		transform: rotate(-5deg);
+	}
+	100% {
+		top: -20px;
+		left: 540px;
+		transform: rotate(0deg);
+	}
+}
+@keyframes moving4 {
+	0% {
+		top: -20px;
+		/*left: 45px;*/
+	}
+	50% {
+		top: -25px;
+		left: 780px;
+		transform: rotate(-3deg);
+	}
+	100% {
+		top: -20px;
+		left: 760px;
+		transform: rotate(0deg);
+	}
+}
+@keyframes moving5 {
+	0% {
+		top: -20px;
+		/*left: 45px;*/
+	}
+	30% {
+		top: -30px;
+		left: 1000px;
+		transform: rotate(-10deg);
+	}
+	70% {
+		top: -20px;
+		left: 980px;
+		transform: rotate(10deg);
+	}
+	100% {
+		/*left: 900px;*/
+		transform: rotate(0deg);
+	}
+}
+.duck5.revertmoving {
+	animation: onerevmoving5 .5s forwards;
+}
+.duck4.revertmoving {
+	animation: onerevmoving4 .5s forwards;
+}
+.duck3.revertmoving {
+	animation: onerevmoving3 .5s forwards;
+}
+.duck2.revertmoving {
+	animation: onerevmoving2 .5s forwards;
+}
+.duck1.revertmoving {
+	animation: onerevmoving1 .5s forwards;
+}
+@keyframes onerevmoving5 {
+	50% {
+		/*top: -30px;*/
+		/*left: 1000px;*/
+		/*transform: rotate(-10deg);*/
+	}
+	100% {
+		/*left: 900px;*/
+		/*transform: rotate(0deg);*/
+	}
+}
+@keyframes onerevmoving4 {
+	50% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes onerevmoving3 {
+	50% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes onerevmoving2 {
+	50% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes onerevmoving1 {
+	0% {
+		left: 100px;
+	}
+	50% {
+		top: -20px;
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.duck1.moving2 {
+	animation: .9s revmoving1 .4s forwards;
+}
+.duck2.moving2 {
+	animation: .5s revmoving2 .3s forwards;
+}
+.duck3.moving2 {
+	animation: .5s revmoving3 .2s forwards;
+}
+.duck4.moving2 {
+	animation: .5s revmoving4 .1s forwards;
+}
+.duck5.moving2 {
+	animation: .5s revmoving5 forwards;
+}
+.duck2.revertmoving2 {
+	animation: revertmoving2 .5s forwards;
+}
+
+/*.duck1.newmoving {
+	animation:  newmoving1 5s infinite;
+}
+.duck2.newmoving {
+	animation:  newmoving2 5s infinite;
+}
+.duck3.newmoving {
+	animation:  newmoving3 5s infinite;
+}
+.duck4.newmoving {
+	animation:  newmoving4 5s infinite;
+}
+.duck5.newmoving {
+	animation:  newmoving5 5s infinite;
+}
+
+
+
+
+

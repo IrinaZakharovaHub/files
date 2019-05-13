@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Regular; /* Имя шрифта */
+  src: url('../fonts/3962.ttf'); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Bold; /* Имя шрифта */
+  src: url('../fonts/3964.ttf'); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Mouse300; /* Имя шрифта */
+  src: url('../fonts/MouseSans300.otf'); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Mouse500; /* Имя шрифта */
+  src: url('../fonts/MouseSans500.otf'); /* Путь к файлу со шрифтом */
+}
+
+

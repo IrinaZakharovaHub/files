@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'DRLCircular';
+  src: url('../fonts/DRLCircular-Light.otf'); 
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'DRLCircular';
+  src: url('../fonts/DRLCircular-Bold.otf'); 
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'DRLCircular';
+  src: url('../fonts/DRLCircular-Book.otf'); 
+  font-style: normal;
+  font-weight: 700;
+}
+
+

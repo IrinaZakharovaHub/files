@@ -1,0 +1,139 @@
+.back {
+    width: 100%;
+    transition: .5s;
+    opacity: 0;
+}
+.button {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+}
+.button--1 {
+    top: 245px;
+    left: 550px;
+}
+.popup {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 1280px;
+    height: 800px;
+    transition: .5s;
+}
+.popup__img {
+    width: 100%;
+    height: 100%;
+}
+.popup__cities {
+        position: absolute;
+    top: 38px;
+    left: 647px;
+    width: 558px;
+}
+.star {
+    position: absolute;
+    width: 100px;
+    transition: .7s;
+    opacity: 0; 
+    transform: rotate(45deg) translateX(50px) rotate(-45deg);
+}
+.star1 {
+    top: -44px;
+    left: 179px;
+    animation: 1s orbit1 1s linear forwards;
+}
+.city-stars {
+    position: absolute;
+    top: 0;
+    left: 550px;
+    width: 700px;
+    height: 700px;
+}
+.city-star {
+    position: absolute;
+    width: 100px;
+    transition: .7s;
+    transform-origin: 50% 50%;
+}
+.star2, .star5, .star9, .star13 {
+    animation: 5s scale linear infinite;
+}
+.star3, .star8, .star10, .star14 {
+    animation: 5s scale 1.5s linear infinite;
+}
+.star4, .star6, .star7, .star11, .star12 {
+    animation: 5s scale 1.5s linear infinite;
+}
+.star2 {
+    top: -37px;
+    left: 150px;
+}
+.star3 {
+    top: 121px;
+    left: 361px;
+}
+.star4 {
+    top: 187px;
+    left: 203px;
+}
+.star5 {
+    top: 246px;
+    left: 268px;
+}
+.star6 {
+    top: 298px;
+    left: 181px;
+}
+.star7 {
+    top: 283px;
+    left: 311px;
+}
+.star8 {
+    top: 329px;
+    left: 505px;
+}
+.star9 {
+    top: 382px;
+    left: 330px;
+}
+.star10 {
+    top: 392px;
+    left: 502px;
+}
+.star11 {
+    top: 384px;
+    left: 37px;
+}
+.star12 {
+    top: 426px;
+    left: 75px;
+}
+.star13 {
+    top: 450px;
+    left: 448px;
+}
+.star14 {
+    top: 513px;
+    left: 613px;
+}
+@keyframes orbit1 {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg) translateX(0px) rotate(0deg) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(50deg) translateX(40px) rotate(-50deg) scale(3);
+    }
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform:  translateX(-2px) translateY(-5px) scale(3);
+    }
+    100% {
+        transform:  scale(1);
+    }
+}

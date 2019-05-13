@@ -1,0 +1,537 @@
+/* COMMON */
+* {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+}
+
+html,
+body {
+    width: 1280px;
+    height: 800px;
+    background: #fff;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #f5ab37, #f8841f);
+    background: linear-gradient(to right, #f5ab37, #f8841f);
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Mouse300', Helvetica, Arial;
+}
+
+a {
+    color: #000;
+}
+
+small {
+    font-size: 12px;
+    color: #BBB;
+    font-weight: normal;
+}
+sup, sub {
+    font-size: 0.9rem;
+}
+
+/* END COMMON */
+
+
+
+/* MAIN */
+#container {
+    background: url("../img/slide_02/background.png");
+    background-size: cover;
+}
+.header {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+.header__img {
+    width: 540px;
+    height: 82px;
+}
+.light {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 800px;
+    height: 900px;
+    -webkit-clip-path: polygon(0 9%, 13% 0, 100% 50%, 24% 100%);
+    clip-path: polygon(0 9%, 13% 0, 100% 50%, 24% 100%);
+    background: -webkit-linear-gradient(315deg, rgba(255,255,255,0.77) 0%,rgba(255,255,255,0) 57%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.77) 0%,rgba(255,255,255,0) 57%);
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    -webkit-animation: 5s js-skew 5s forwards;
+    animation: 5s js-skew 5s forwards;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+
+.content {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+}
+.popup-block {
+    position: absolute;
+    width: 505px;
+    height: 120px;
+}
+.popup-block--1 {
+    left: 650px;
+    top: 214px;
+}
+.popup-block--2 {
+    left: 650px;
+    top: 375px;
+}
+.popup-block--3 {
+    left: 650px;
+    top: 530px;
+}
+.popup {
+    opacity: 0;
+    pointer-events: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup__bg {
+    width: 100%;
+    height: 100%;
+}
+.popup--show {
+    opacity: 1;
+    pointer-events: auto;
+}
+.popup__close {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/slide_02/close.png);
+    background-size: cover;
+}
+
+
+/* POPUP 1 */
+
+.popup__run1 {
+    position: absolute;
+    top: 224px;
+    width: 390px;
+    left: -380px;
+}
+.popup__run1.active {
+    animation: move-runner 2.3s forwards, 2s opacity0 3s forwards;
+}
+@keyframes move-runner {
+    100% {
+        transform: translateX(400px);
+    }
+}
+.popup__run2 {
+    position: absolute;
+    top: 250px;
+    width: 260px;
+    left: -251px;
+}
+.popup__run2.active {
+    animation: move-runner2 1.9s forwards, 2s opacity0 3s forwards;
+}
+@keyframes move-runner2 {
+    100% {
+        transform: translateX(600px);
+    }
+}
+.popup__bike {
+    position: absolute;
+    top: 258px;
+    left: -450px;
+    width: 449px;
+}
+.popup__bike.active {
+    animation: move-bike 1.5s forwards, 2s opacity0 3s forwards;
+}
+@keyframes move-bike {
+    100% {
+        transform: translateX(1070px);
+    }
+}
+
+.popup__fig1 {
+    position: absolute;
+    top: 570px;
+    left: -500px;
+    width: 241px;
+}
+.popup__fig1.active {
+    animation: move-runner2 3s forwards, opacity0 3s forwards;
+}
+.popup__fig2 {
+    position: absolute;
+    top: 570px;
+    left: -300px;
+    width: 250px;
+}
+.popup__fig2.active {
+    animation: move-runner2 2s forwards, opacity0 2s forwards;
+}
+.popup__fig3 {
+    position: absolute;
+    top: 570px;
+    left: -100px;
+    width: 241px;
+}
+.popup__fig3.active {
+    animation: move-runner2 1s forwards, opacity0 1s forwards;
+}
+@keyframes opacity0 {
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes opacity1 {
+    100% {
+        opacity: 1;
+    }
+}
+.popup__60 {
+    position: absolute;
+    top: 570px;
+    left: 100px;
+    width: 177px;
+    opacity: 0;
+    transition: 1.5s;
+}
+.popup__60.active {
+    animation: 1s opacity0 3s forwards;
+}
+.popup__24 {
+    position: absolute;
+    top: 570px;
+    left: 442px;
+    width: 202px;
+     opacity: 0;
+    transition: 1s;
+}
+.popup__24.active {
+    animation: 1s opacity0 3s forwards;
+}
+.popup__15 {
+    position: absolute;
+    top: 493px;
+    left: 942px;
+    width: 286px;
+    opacity: 0;
+    transition: 1s;
+}
+.popup__15.active {
+    animation: 1s opacity0 3s forwards;
+}
+/*@keyframes opacity1 {*/
+    /*100% {*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+.tape1 {
+    position: absolute;
+    top: 400px;
+    left: 420px;
+    width: 590px;
+    opacity: 0;
+    transition: 2s;
+}
+.tape1.active {
+    animation: 1s opacity0 3s forwards;
+}
+.tape2 {
+    position: absolute;
+    top: 25px;
+    width: 725px;
+    left: 435px;
+    opacity: 0;
+    transition: 2s;
+}
+.tape2.active {
+    animation: 1s opacity0 3s forwards;
+}
+
+/* 3rd step */
+.tape12 {
+    position: absolute;
+    top: 400px;
+    left: -120px;
+    width: 590px;
+    opacity: 0;
+    transition: 2s;
+}
+.tape12.active {
+    animation: 1.5s opacity1 5s forwards;
+}
+.tape22 {
+    position: absolute;
+    top: 25px;
+    width: 725px;
+    left: -125px;
+    opacity: 0;
+    transition: 2s;
+}
+.tape22.active {
+    animation: 1.5s opacity1 5s forwards;
+}
+.popup__bike2 {
+    position: absolute;
+    top: 234px;
+    left: 40px;
+    width: 494px;
+    opacity: 0;
+}
+.popup__bike2.active {
+    animation: 1.5s opacity1 5s forwards;
+}
+.popup__152 {
+    position: absolute;
+    top: 513px;
+    left: 405px;
+    width: 200px;
+    opacity: 0;
+    transition: 1s;
+}
+.popup__152.active {
+    animation: 1.5s opacity1 5s forwards;
+}
+.popup__pack {
+    position: absolute;
+    top: 286px;
+    left: 645px;
+    width: 655px;
+    opacity: 0;
+    transition: 1s;
+}
+.popup__pack.active {
+    animation: 1.5s opacity1 5s forwards;
+}
+
+/* POPUP 2 */
+.popup__batt {
+    position: absolute;
+    top: 254px;
+    left: 223px;
+    width: 113px;
+    height: 213px;
+}
+.popup__batt2 {
+    position: absolute;
+    top: 260px;
+    left: 72px;
+    width: 93px;
+    height: 176px;
+}
+.popup__batt3 {
+    position: absolute;
+    top: 247px;
+    left: 397px;
+    width: 132px;
+    height: 249px;
+}
+.popup__dark-fill {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: rgba(0,0,0,.5);
+}
+.popup__fill {
+    position: absolute;
+    bottom: 8px;
+    left: 1px;
+    width: 99%;
+    height: 85%;
+    background: #4e981b;
+    transition: 2s;
+}
+.popup__batt3 .popup__fill.active {
+    animation: linear battery_low3 5s forwards;
+}
+.popup__batt2 .popup__fill.active {
+    animation: linear battery_low2 5s forwards;
+}
+.popup__fill.active {
+    animation: linear battery_low 5s forwards;
+}
+@keyframes battery_low3 {
+    50% {
+        height: 50%;
+        background: #e8c11e;
+    }
+    100% {
+        height: 3%;
+        background: red;
+        opacity: 0;
+    }
+}
+@keyframes battery_low2 {
+    100% {
+        height: 48%;
+        background: #c0a01a;
+    }
+}
+@keyframes battery_low {
+    50% {
+        height: 50%;
+        background: #e8c11e;
+    }
+    100% {
+        height: 26%;
+        background: #d51f1f;
+    }
+}
+.popup__top-fill {
+    position: absolute;
+    bottom: 37%;
+    width: 100%;
+    height: 100%;
+    background: #66c051;
+    -webkit-clip-path: ellipse(49% 3% at 50% 50%);
+    clip-path: ellipse(49% 3% at 50% 50%);
+}
+.popup__batt3 .popup__top-fill.active {
+    animation: linear battery-top_low3 5s forwards;
+}
+.popup__batt2 .popup__top-fill.active {
+    animation: linear battery-top_low2 5s forwards;
+}
+.popup__top-fill.active {
+    animation: linear battery-top_low 5s forwards;
+}
+@keyframes battery-top_low3 {
+    50% {
+        bottom: 4%;
+        background: #e8c11e;
+    }
+    100% {
+        bottom: -42%;
+        background: #d51f1f;
+        opacity: 0;
+    }
+}
+@keyframes battery-top_low2 {
+    100% {
+        bottom: 4%;
+        background: #e8c11e;
+    }
+}
+@keyframes battery-top_low {
+    50% {
+        bottom: 4%;
+        background: #e8c11e;
+    }
+    100% {
+        bottom: -20%;
+        background: #d51f1f;
+    }
+}
+
+.popup__battery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.popup__teks-battery {
+    position: absolute;
+    top: 243px;
+    left: 594px;
+    width: 168px;
+}
+.popup__teks-battery img {
+    width: 100%;
+}
+.popup__star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    transition: 3s;
+    opacity: 0;
+    pointer-events: none;
+}
+.popup__star.active {
+    opacity: 1;
+}
+.popup2__pack {
+    position: absolute;
+    top: 235px;
+    left: 645px;
+    width: 655px;
+    transition: 1s;
+}
+.popup__outlet {
+    position: absolute;
+    width: 134px;
+    top: 326px;
+    left: 395px;
+    opacity: 0;
+}
+.popup__outlet.active {
+    animation: 2s opacity1 4s forwards;
+}
+
+/* POPUP 3 */
+
+.popup__pain {
+    position: absolute;
+    top: 163px;
+    left: 52px;
+    width: 391px;
+}
+.popup3__left {
+    position: absolute;
+    width: 1170px;
+    top: -10px;
+    left: 0;
+    opacity: 0;
+}
+.popup3__left.active {
+    animation: 2s opacity1 forwards;
+}
+.popup3__right {
+    position: absolute;
+    top: -10px;
+    left: 392px;
+    opacity: 0;
+    width: 900px;
+    height: 802px;
+}
+.popup3__right.active {
+    animation: 2s opacity1 1s forwards;
+}
+
+/* js */
+.opacity0 {
+    opacity: 0;
+}
+.opacity1 {
+    opacity: 1;
+}

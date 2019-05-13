@@ -1,0 +1,261 @@
+#container {
+    background: url("../img/slide_01/background.jpg");
+    background-size: cover;
+}
+.blue {
+	width: 1003px;
+    position: absolute;
+    top: 555px;
+    left: 0;
+}
+.men--back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 640px;
+    transition: 1s;
+    opacity: 1;
+}
+.men--back.active {
+	opacity: 0;
+}
+.men--face {
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 1280px;
+    transition: 1s;
+    opacity: 0;
+}
+.men--face.active {
+    opacity: 1;
+}
+.pack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+}
+.pack.active {
+    opacity: 1;
+}
+/*.not-wait {
+    width: 529px;
+    position: absolute;
+    top: 255px;
+    left: 246px;
+    opacity: 0;
+    transition: 1s;
+}
+.not-wait.active {
+    opacity: 1;
+}*/
+/*.light1 {
+    width: 900px;
+    position: absolute;
+    top: 0;
+    left: 310px;
+    opacity: 0;
+    transition: 1s;
+}
+.light1.active {
+    opacity: 1;
+}
+.light2 {
+    position: absolute;
+    top: -119px;
+    left: 0;
+    width: 1000px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+}
+.light2.active {
+    opacity: 1;
+}*/
+
+/* SLOGAN */
+.slogan--1 {
+    position: absolute;
+    width: 535px;
+    top: 355px;
+    left: 190px;
+    transition: 1s;
+}
+.slogan--1.active, .slogan--2.active, .slogan--3.active {
+    opacity: 0;
+}
+.slogan--2 {
+    width: 464px;
+    position: absolute;
+    top: 281px;
+    left: 410px;
+    transition: 1s;
+}
+.slogan--3 {
+    width: 264px;
+    position: absolute;
+    top: 229px;
+    left: 725px;
+    transition: 1s;
+}
+
+/* BLOCK */
+
+.block__blue {
+	width: 691px;
+    position: absolute;
+    top: 526px;
+    left: 0;
+    transition: 1s;
+}
+.block__text {
+	width: 555px;
+    position: absolute;
+    top: 564px;
+    left: 43px;
+    transition: 1s;
+}
+.block img.active {
+    transform: translateX(-695px);
+}
+
+/* BUTTON */
+.button__area {
+    position: absolute;
+    top: 573px;
+    left: 710px;
+    width: 273px;
+    height: 93px;
+    background: #eb8a23;
+    border-radius: 45px;
+    box-shadow: inset 0 5px 20px rgba(0,0,0,.5);
+    transition: 2s;
+}
+.button__blue-area {
+    position: absolute;
+    top: 573px;
+    left: 710px;
+    width: 273px;
+    height: 93px;
+    background: #0f5ac4;;
+    border-radius: 45px;
+    box-shadow: inset 0 5px 20px rgba(0,0,0,.5);
+    transition: 2s;
+}
+.button__area.active {
+	opacity: 0;
+}
+.button__thumb--orange {
+	width: 138px;
+    position: absolute;
+    top: 549px;
+    left: 686px;
+    transition: 1s;
+}
+.button__thumb--orange.active {
+	transform: translateX(182px);
+	opacity: 0;
+	pointer-events: none;
+}
+.button__thumb--blue {
+    width: 142px;
+    position: absolute;
+    top: 548px;
+    left: 686px;
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+}
+.button__thumb--blue.active {
+	opacity: 1;
+	transform: translateX(182px);
+	pointer-events: auto;
+}
+.button__background {
+    width: 274px;
+    position: absolute;
+    top: 573px;
+    left: 710px;
+    opacity: 1;
+    transition: 1s;
+    border-radius: 50px;
+}
+.button__background.active {
+    opacity: 0;
+}
+.button__hand {
+    width: 55px;
+    position: absolute;
+    top: 588px;
+    left: 726px;
+    pointer-events: none;
+    transition: 1.5s;
+    opacity: 0;
+}
+.button__hand.ux {
+    animation: ux 3s infinite;
+}
+@keyframes ux {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(180px);
+    }
+    100% {
+        transform: translateX(180px);
+        opacity: 0;
+    }
+}
+.button__round {
+    width: 85px;
+    position: absolute;
+    top: 577px;
+    left: 896px;
+    opacity: 0;
+    pointer-events: none;
+}
+.button__round.ux {
+    animation: linear rotation 3s infinite;
+}
+@keyframes rotation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.blue-shadow {
+	width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 573px;
+    left: 711px;
+    transition: 1s;
+    pointer-events: none;
+    box-shadow: -25px 0 40px #00d4ff;
+    border-radius: 50px;
+    opacity: 0;
+}
+.blue-shadow.active {
+	transform: translateX(182px);
+	animation: shadow-opacity 1s forwards;
+}
+@keyframes shadow-opacity {
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+        box-shadow: -10px 0 40px #00d4ff;
+	}
+}

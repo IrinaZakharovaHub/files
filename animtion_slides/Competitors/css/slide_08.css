@@ -1,0 +1,40 @@
+.back {
+    width: 100%;
+    transition: .5s;
+    opacity: 0;
+}
+.star {
+    position: absolute;
+    opacity: 0; 
+}
+.star1 {
+    top: 205px;
+    left: 957px;
+    width: 100px;
+    transition: .7s;
+    animation: orbit 1s linear forwards;
+}
+.star2 {
+    top: 337px;
+    left: 957px;
+    width: 100px;
+    transition: .7s;
+    animation: 1s orbit 1s linear forwards;
+}
+.star3 {
+    top: 464px;
+    left: 957px;
+    width: 100px;
+    transition: .7s;
+    animation: 1s orbit 2s linear forwards;
+}
+@keyframes orbit {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg) translateX(0px) rotate(0deg) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(47deg) translateX(50px) rotate(-47deg) scale(2);
+    }
+}

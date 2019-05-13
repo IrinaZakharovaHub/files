@@ -1,0 +1,283 @@
+/*==========reset=============*/
+* {
+  box-sizing:border-box;
+}
+html{width:100%;height:100%;padding:0;margin:0;}
+body{/*overflow:hidden;*/width:100%;height:100%;padding:0;margin:0;color:#0b4968;background:#fff;font:14px/18px Arial, Tahoma, Verdana, Helvetica, sans-serif;}
+p{margin:0 0 23px;}
+
+a {text-decoration: none;color:#000066;}
+a:visited {}
+a:hover {text-decoration:none;}
+
+a img {text-decoration:none;border: none;}
+
+ul {list-style: none; padding:0;margin:0;}
+ul ul {margin: 0;}
+ul li {padding: 0;}
+
+table {border-collapse: collapse;}
+td,th {padding:0;}
+
+form {margin:0px;}
+input,select, label, textarea,button {margin:0;font-family:Arial, Tahoma, Verdana, Helvetica, sans-serif;}
+input, textarea { outline:none; }
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+input.text,textarea, input.inputtext {padding:2px 5px;border:1px solid #acadb2;color:#333;background:#fff;}
+input.submit,button {cursor:pointer;}
+input.checkbox, input.radio {width:14px;height:14px;margin:0;padding:0;}
+option {z-index: 10000}
+.clear {width:100%;height:0px;clear:both;overflow:hidden;display:block;}
+textarea {resize: none;overflow: auto;}
+select::-ms-value {background: none; color: #42413D;}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin:0;
+  font-weight: normal;
+}
+/*=========reset (end)==============*/
+
+body {background: url(../img/bg.jpg) no-repeat 0 0 / cover;}
+
+.container {
+  position: relative;
+  font-family: 'DRLCircular';
+  width: 1280px;
+  height: 800px;
+  padding: 70px 80px 0 109px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  overflow: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -100vh;
+  background-color: rgba(93,32,185,.5);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out;
+}
+
+.overlay--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 81px;
+  right: 61px;
+}
+
+.title {
+  font-size: 49px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.scroll-top {
+  -webkit-transform: translateY(-38%);
+  transform: translateY(-38%);
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.form__field {position: relative;}
+
+.form__field-shadowed:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, #fff, transparent);
+  border-radius: 0 0 6px 6px;
+  z-index: 1;
+}
+
+.form__title {margin-bottom: 2px;}
+
+.form__field--active {z-index: 2;position: relative;}
+
+.form__row:nth-child(1) .form__field:nth-child(1) {width: 31%;}
+.form__row:nth-child(1) .form__field:nth-child(2) {width: 66%;}
+.form__row:nth-child(2) .form__field:nth-child(1) {width: 49%;}
+.form__row:nth-child(2) .form__field:nth-child(2) {width: 49%;}
+.form__row:nth-child(3) .form__field:nth-child(1) {width: 64%;}
+
+.form__dropdown {
+  position: relative;
+  color: #5d20b9;
+}
+
+.form__dropdown-value {
+  position: relative;
+  min-height: 50px;
+  border-radius: 6px;
+  background-color: #fff;
+  line-height: 2.5;
+  padding: 0 20px;
+}
+
+.form__dropdown-value:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  border-left: 4px solid #5D20B9;
+  border-bottom: 4px solid #5D20B9;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: transform .5s, top .5s;
+  transition: transform .5s, top .5s;
+}
+
+.form__dropdown--opened .form__dropdown-value:after {
+  top: 20px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.scroll {
+  width: 2px;
+  background-color: rgba(93,32,185,.25);
+}
+
+.form__dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 0 0 6px 6px;
+  z-index: 1;
+  box-shadow: 0 -5px 0 0 #fff;
+  border-top: 1px solid #5D20B9;
+  opacity: 0;
+}
+
+.form__dropdown-list:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 0;
+  height: 40px;
+  background: linear-gradient(to top, #fff, transparent);
+  z-index: 1;
+}
+
+.form__dropdown-list > ul {
+  padding: 20px;
+}
+
+.form__field:nth-child(1) .form__dropdown-list {height: 400px;}
+
+.form__dropdown-item {
+  line-height: 2;
+}
+
+.form__dropdown-list--boxes .form__dropdown-item {
+  display: none;
+}
+
+.form__dropdown-list--boxes .form__dropdown-item--visible {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 20px 20px;
+  font-family: 'DRLCircular';
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #5d20b9;
+  transition: opacity .5s;
+}
+
+.textarea:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to top, red, transparent);
+  z-index: 1;
+}
+
+textarea:disabled {opacity: 0.5;}
+
+.form__row:nth-child(3) textarea { padding: 11px 20px;}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 6px;
+  padding: 21px 23px 15px;
+  background-color: #00BCAC;
+  box-shadow: 0 2px 30px rgba(0,188,172, 1);
+  margin-top: 10px;
+  -webkit-transition: box-shadow .5s;
+  transition: box-shadow .5s;
+}
+
+.btn--disabled {
+  box-shadow: none;
+}
+
+.btn-refresh {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding-left: 40px;
+  line-height: 3;
+  background: url(../img/arrow.png) no-repeat 0 45%;
+  background-size: 31.5px auto;
+  text-decoration: underline;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.btn-refresh--visible {
+  opacity: 1;
+  pointer-events: auto;
+}

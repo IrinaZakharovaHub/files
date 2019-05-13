@@ -1,0 +1,118 @@
+ /* COMMON */
+* {
+     -webkit-touch-callout: none;
+     /* prevent callout to copy image, etc when tap to hold */
+     -webkit-text-size-adjust: none;
+     /* prevent webkit from resizing text to fit */
+     /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+     -webkit-user-select: none;
+     /* prevent copy paste, to allow, change 'none' to 'text' */
+     /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+ }
+
+ html,
+ body {
+     width: 1280px;
+     height: 800px;
+     background: #fff;
+ }
+
+ body {
+     background: -webkit-linear-gradient(left, #f5ab37, #f8841f);
+     background: linear-gradient(to right, #f5ab37, #f8841f);
+     margin: 0;
+     overflow: hidden;
+     text-align: center;
+     font-family: 'Mouse300', Helvetica, Arial;
+ }
+
+ a {
+     color: #000;
+ }
+
+ small {
+     font-size: 12px;
+     color: #BBB;
+     font-weight: normal;
+ }
+
+ /* END COMMON */
+
+
+
+/* MAIN */
+.slide_06 {
+
+     background-image: url(../img/slide_06/bg.png);
+     background-size: cover;
+
+}
+
+.slide_06__text,
+.slide_06__title {
+
+     position: absolute;
+     top: 125px;
+     left: 764px;
+
+}
+.slide_06__text {
+     opacity: 0;
+     -webkit-animation: fadeInText .5s .5s forwards;
+     animation: fadeInText .5s .5s forwards;
+     -webkit-transform-origin: bottom;
+     transform-origin: bottom;
+}
+
+@-webkit-keyframes fadeInText {
+     0% {
+          opacity: 0;
+          -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+     }
+     100% {
+          opacity: 1;
+          -webkit-transform: skewX(0);
+          transform: skewX(0);
+     }
+}
+
+@keyframes fadeInText {
+     0% {
+          opacity: 0;
+          -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+     }
+     100% {
+          opacity: 1;
+          -webkit-transform: skewX(0);
+          transform: skewX(0);
+     }
+}
+
+.slide_06__pack {
+
+     position: absolute;
+     top: 311px;
+     left: 751px;
+
+}
+
+.slide_06__svg {
+
+     position: absolute;
+     top: 68px;
+     left: 37px;
+     width: 685px;
+
+}
+.slide_06__svg path,
+.slide_06__svg rect,
+.slide_06__svg polygon {
+     opacity: 0;
+     fill: #fff;
+}
+.slide_06__svg .slide_06__svg-show {
+     opacity: 1;
+}
