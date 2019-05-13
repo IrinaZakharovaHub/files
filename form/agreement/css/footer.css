@@ -1,0 +1,351 @@
+.footer--closed {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.footer__block {
+    width: 200px;
+}
+.footer__btn {
+    width: 47px;
+    margin: 0 15px;
+    border-radius: 50%;
+    box-shadow: 0 10px 40px rgba(38, 155, 193, 0.5);
+}
+.footer__reddys-logo {
+    position: absolute;
+    right: 53px;
+    top: 18px;
+    width: 175px;
+    filter: brightness(1);
+    transition: 1s;
+}
+.footer__reddys-context {
+    font-size: 7px;
+    position: absolute;
+    text-align: right;
+    right: 47px;
+    bottom: 4px;
+    color: #614193;
+}
+.footer__razo {
+    position: absolute;
+    left: 150px;
+    width: 248px;
+    top: 19px;
+}
+
+.footer__menu {
+    text-align: left;
+}
+
+.footer--opened {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*height: 262px;*/
+    z-index: 99;
+    display: flex;
+    text-align: left;
+    padding: 40px 40px 100px 40px;
+    box-sizing: border-box;
+
+    background: #0059df;
+    color: #fff;
+    font-size: 18px;
+}
+.filter {
+    filter: brightness(5);
+    color: #fff;
+}
+.dark-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* UTILITES */
+.center {
+  text-align: center;
+}
+/*  FROM TEXARED 1 */
+
+
+/*------ video content------*/
+
+.library__video {
+  display: inline-block;
+  width: 142px;
+  height: 114.5px;
+  background: url('../images/lib/lib__video.png') 0 0 no-repeat;
+  background-size: 142px 114.5px;
+}
+
+.video-overlay {
+  display: none;
+  z-index: 100000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+
+.video-modal {
+  position: absolute;
+  width: 1200px;
+  height: 600px;
+  display: none;
+  top: 90px;
+  left: 40px;
+  z-index: 100001
+}
+
+.video-modal-close {
+  z-index: 10;
+  top: -37px;
+  right: 27px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url('../images/lib/lib__close.png') no-repeat;
+  background-size: 80px 80px;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+
+.modal {
+  display: none;
+  top: 62px;
+  left: 94px;
+  z-index: 9999;
+}
+
+/*popup*/
+.popup-wrap {
+  position: absolute;
+  background: #0056a0;
+  right: 0;
+  bottom: 99px;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+.popup-wrap.visible {
+  z-index: 9998;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+.popup-wrap .popup-opacity {opacity: 0;}
+.popup-wrap.visible .bg {
+  /*background: rgba(255,255,255,0.8);
+  width: 1024px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;*/
+}
+.popup-wrap .popup {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  height: 190px;
+  padding-top: 34px;
+  padding-left: 82px;
+  position: relative;
+  z-index: 1;
+  font-size: 11px;
+  color: #FFF;
+  letter-spacing: -.4px;
+  font-weight: 600;
+}
+.popup-wrap .close {
+  position: absolute;
+  bottom: -75px;
+  opacity: 1;
+  cursor: pointer;
+  left: 10px;
+  width: 56px;
+  height: 53px;
+}
+.popup-open {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  width: 250px;
+  height: 101px;
+  z-index: 15;
+  cursor: pointer;
+}
+.button {
+  position: absolute;
+  top: 48px;
+  left: 859px;
+  cursor: pointer;
+}
+.popup-wrap h3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.text-left {text-align: left;}
+
+.popup li span {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 15px;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.popup li span:hover,
+.popup li span:active {text-decoration: none;}
+.open-pdf {
+  color: #09ab9b;
+}
+.send-pdf {
+  color: #8caddc;
+}
+.nextBr {
+  margin-top: -10px;
+}
+.nextBr span:first-child {
+  margin-left: 0;
+}
+
+/* library */
+.library {
+  position: absolute;
+  z-index: 9999;
+  width: 1280px;
+  height: 800px;
+  background: url('../images/lib/lib__bg.png') 0 0 no-repeat;
+  background-size: 1280px 800px;
+  display: none;
+  top:0;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.library_show {
+  display: block;
+}
+
+.library__title {
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  font: bold 50px 'Roboto';
+}
+
+.library__close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 62px;
+  height: 62px;
+  background: url('../images/lib/lib__close.png') 0 0 no-repeat;
+  background-size: 62px 62px;
+}
+
+.library__section {
+  position: absolute;
+  top: 120px;
+  display: none;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 1280px;
+}
+
+.library__section_show {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.library__back {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 111.5px;
+  height: 72.5px;
+  background: url('../images/lib/lib__back.png') 0 0 no-repeat;
+  background-size: 111.5px 145px;
+}
+
+.library__back_active {
+  background-position-y: 100%;
+}
+
+.library__item {
+  width: 200px;
+  text-align: center;
+  margin: 6px;
+}
+
+.library__name {
+    color: #614193;
+    font: bold 16px 'Roboto';
+}
+
+.library__pdf {
+  display: inline-block;
+  width: 142px;
+  height: 114.5px;
+  background: url('../images/lib/lib__pdf.png') 0 0 no-repeat;
+  background-size: 142px 114.5px;
+}
+
+.library__folder {
+  display: inline-block;
+  width: 142px;
+  height: 114.5px;
+  background: url('../images/lib/lib__folder.png') 0 0 no-repeat;
+  background-size: 142px 114.5px;
+}
+
+.bottom_opener {
+  position: absolute;
+  bottom: 27px;
+  left: 30px;
+  width: 45px;
+  height: 54px;
+  z-index: 1;
+}

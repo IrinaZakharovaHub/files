@@ -1,0 +1,120 @@
+{
+    "settings":
+    {
+        "slideFlip":
+        {
+            "animationSpeed": 0,
+            "gestures": [
+                "swipe"
+            ]
+        }
+    },
+    "sections": [
+    {
+        "name": "Слайд информационного согласия",
+        "slides": [
+        {
+            "alias": "100",
+            "name": "Слайд 100",
+            "source": "slides/slide_100.html",
+            "preview": "previews/100.png",
+            "attachments": [
+            {
+                "alias": "pdf0",
+                "name": "00_Нейробион таблетки",
+                "path": "pdf/pdf0.pdf"
+            },
+            {
+                "alias": "pdf1",
+                "name": "01_Нейробион раствор",
+                "path": "pdf/pdf1.pdf"
+            },
+            {
+                "alias": "pdf2",
+                "name": "02_Приказ местные анестетики",
+                "path": "pdf/pdf2.pdf"
+            },
+            {
+                "alias": "pdf3",
+                "name": "03_Камчатнов. Применение препарата",
+                "path": "pdf/pdf3.pdf"
+            },
+            {
+                "alias": "pdf4",
+                "name": "04_Зиновьева. Витамин В12",
+                "path": "pdf/pdf4.pdf"
+            },
+            {
+                "alias": "pdf5",
+                "name": "05_Зиновьева. Патогенез и лечение",
+                "path": "pdf/pdf5.pdf"
+            },
+            {
+                "alias": "pdf6",
+                "name": "06_Топчий. Полиневропатии в работе",
+                "path": "pdf/pdf6.pdf"
+            },
+            {
+                "alias": "pdf7",
+                "name": "07_Шостак. Боль в спине",
+                "path": "pdf/pdf7.pdf"
+            },
+            {
+                "alias": "pdf8",
+                "name": "08_Combilipen_inj",
+                "path": "pdf/pdf8.pdf"
+            },
+            {
+                "alias": "pdf9",
+                "name": "09_Combilipen_tab",
+                "path": "pdf/pdf9.pdf"
+            },
+            {
+                "alias": "pdf10",
+                "name": "10_Milgamma_inj",
+                "path": "pdf/pdf10.pdf"
+            },
+            {
+                "alias": "pdf11",
+                "name": "11_Milgamma_tab",
+                "path": "pdf/pdf11.pdf"
+            },
+            {
+                "alias": "pdf12",
+                "name": "12_Medznat_for_bib",
+                "path": "pdf/pdf12.pdf"
+            },
+            {
+                "alias": "pdf13",
+                "name": "13_Neyrobion_New",
+                "path": "pdf/pdf13.pdf"
+            },
+            {
+                "alias": "pdf14",
+                "name": "14_Neuromultivit",
+                "path": "pdf/pdf14.pdf"
+            }],
+            "questionaries": [
+            {
+                "alias": "article1",
+                "name": "Статьи для отправки"
+            },
+            {
+                "alias": "article2",
+                "name": "Статьи для отправки"
+            },
+            {
+                "alias": "email",
+                "name": "Почта"
+            },
+            {
+                "alias": "phone",
+                "name": "Номер телефона"
+            },
+            {
+                "alias": "inBase",
+                "name": "Зарегистрирован ли на сайте"
+            }]
+        }]
+    }]
+}
