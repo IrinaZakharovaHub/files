@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Google",
+    "id": "12345",
+    "enable": true,
+    "info": [
+      "все 30 заведений настроены"
+    ],
+    "buttons": [
+      {
+        "isActive": false,
+        "title": "Синхронизировано",
+        "id": "1"
+      },
+      {
+        "isActive": false,
+        "title": "Инфа",
+        "id": "2"
+      },
+      {
+        "isActive": false,
+        "title": "Прайс",
+        "id": "3"
+      },
+      {
+        "isActive": false,
+        "title": "Фото",
+        "id": "4"
+      },
+      {
+        "isActive": false,
+        "title": "Акции",
+        "id": "5"
+      }
+    ],
+    "creatingButton": "",
+    "rate": "4.5 из 5",
+    "active": true,
+    "needActions": false,
+    "search": "",
+    "upgrade": "2 обновления",
+    "feedback": "198 отзывов, 15 неотвеченных"
+  },
+  {
+    "name": "Flado",
+    "id": "12346",
+    "enable": true,
+    "info": [
+      "30 заведений",
+      "4 настроено",
+      "20 в поиске"
+    ],
+    "buttons": [
+      {
+        "isActive": false,
+        "title": "Инфа",
+        "id": "6"
+      },
+      {
+        "isActive": false,
+        "title": "Прайс",
+        "id": "7"
+      },
+      {
+        "isActive": false,
+        "title": "Фото",
+        "id": "8"
+      },
+      {
+        "isActive": false,
+        "title": "Акции",
+        "id": "9"
+      }
+    ],
+    "creatingButton": "3",
+    "rate": "Портал без рейтинга",
+    "active": true,
+    "needActions": true,
+    "search": "",
+    "upgrade": "",
+    "feedback": ""
+  },
+  {
+    "name": "2Gis",
+    "id": "12347",
+    "enable": true,
+    "info": [
+    ],
+    "buttons": [
+
+    ],
+    "creatingButton": "3",
+    "rate": "",
+    "active": false,
+    "needActions": true,
+    "search": "Поиск заведений: 15 из 78",
+    "upgrade": "",
+    "feedback": ""
+  },
+  {
+    "name": "Yell",
+    "id": "12348",
+    "enable": false,
+    "info": [
+    ],
+    "buttons": [
+    ],
+    "creatingButton": "",
+    "rate": "",
+    "active": false,
+    "needActions": false,
+    "search": "",
+    "upgrade": "",
+    "feedback": ""
+  }
+]
+
+
